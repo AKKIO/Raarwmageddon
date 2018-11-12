@@ -58,3 +58,8 @@ for(var o = 0; o < rheigh; o++){
 
 
 ly_min = min(ly[0], ly[1], ly[2]);
+
+
+if !place_meeting(x, y, obj_barrier){
+	instance_destroy(obj_barrier);
+}

@@ -71,4 +71,3 @@ for (var yy = 1; yy <= 30; yy ++){
 	}
 	
 }
-instance_destroy();

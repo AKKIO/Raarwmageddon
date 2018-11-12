@@ -5,27 +5,7 @@
     "name": "int_surfacesColor",
     "eventList": [
         {
-            "id": "2855827a-d5cf-4bc4-be7c-9b481b1e61be",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "8b459d26-13fd-4417-bc33-8dcb1f1e2fc8"
-        },
-        {
-            "id": "af9f0631-cf11-46ab-9fa2-d839c314c946",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "8b459d26-13fd-4417-bc33-8dcb1f1e2fc8"
-        },
-        {
-            "id": "357ea368-291f-473f-a963-7e2705b694ed",
+            "id": "2b0f05c0-4d88-41b5-9365-8e5bb6aa4a41",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
