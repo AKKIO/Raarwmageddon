@@ -5,3 +5,4 @@ for(i = 0; i < 64; i++){
 		instance_destroy();
 	}
 }
+image_blend = global.c_redme

@@ -1,5 +1,12 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
+if instance_exists(obj_shit){
+	instance_destroy(obj_shit);
+}
+if instance_exists(obj_bigger_shit){
+	instance_destroy(obj_bigger_shit);
+}
+instance_destroy(obj_platform_brick);
 instance_destroy(obj_platform);
 instance_destroy(obj_platform_brick);
 instance_destroy(obj_small_hidraulic);
