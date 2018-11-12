@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-spd = 4;
-motion_set(-90, spd);
+tile = scr_tileAuto(obj_platform, 1);
+alarm[0] = 2;

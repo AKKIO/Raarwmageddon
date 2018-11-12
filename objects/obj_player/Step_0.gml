@@ -94,13 +94,14 @@ if !place_free(x, y + 1){
 }
 
 //lenght dir the smash
-var bbox = 6, boxl = 16, rheigh = room_height;
+var bbox = 6, boxl = 16, rheigh = 160;
 for(var i = 0; i < rheigh; i++){
 	ly[0] = y+lengthdir_y(i, -90);
 	if (collision_point(x-bbox, ly[0]+boxl, obj_solid, false, true) || 
 	collision_point(x-bbox, ly[0]+boxl, obj_small_hidraulic, false, true) ||
 	collision_point(x-bbox, ly[0]+boxl, obj_big_hidraulic, false, true) ||
-	collision_point(x-bbox, ly[0]+boxl, obj_platform, false, true)){
+	collision_point(x-bbox, ly[0]+boxl, obj_platform, false, true) ||
+	collision_point(x-bbox, ly[0]+boxl, obj_platform_brick, false, true)) {
 		break;
 	}
 }
@@ -109,7 +110,8 @@ for(var e = 0; e < rheigh; e++){
 	if (collision_point(x, ly[1]+boxl, obj_solid, false, true) || 
 	collision_point(x, ly[1]+boxl, obj_small_hidraulic, false, true) ||
 	collision_point(x, ly[1]+boxl, obj_big_hidraulic, false, true) ||
-	collision_point(x, ly[1]+boxl, obj_platform, false, true)){
+	collision_point(x, ly[1]+boxl, obj_platform, false, true) ||
+	collision_point(x, ly[1]+boxl, obj_platform_brick, false, true)){
 		break;
 	}
 }
@@ -118,7 +120,8 @@ for(var o = 0; o < rheigh; o++){
 	if (collision_point(x+bbox-1, ly[2]+boxl, obj_solid, false, true) || 
 	collision_point(x+bbox-1, ly[2]+boxl, obj_small_hidraulic, false, true) ||
 	collision_point(x+bbox-1, ly[2]+boxl, obj_big_hidraulic, false, true) ||
-	collision_point(x+bbox-1, ly[2]+boxl, obj_platform, false, true)){
+	collision_point(x+bbox-1, ly[2]+boxl, obj_platform, false, true) ||
+	collision_point(x+bbox-1, ly[2]+boxl, obj_platform_brick, false, true)){
 		break;
 	}
 }
