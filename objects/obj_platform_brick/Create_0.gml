@@ -5,6 +5,7 @@ image_speed = 0;
 draw_a = 0;
 allow_d = 0;
 hp = 2;
+xplo = 1;
 
 if place_free(x, y-16){
 	detail = instance_create_layer(x, y-9, "ly_platforms", obj_detail);
