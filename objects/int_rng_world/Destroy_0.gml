@@ -13,12 +13,25 @@ if instance_exists(obj_shit){
 if instance_exists(obj_bigger_shit){
 	instance_destroy(obj_bigger_shit);
 }
-instance_destroy(obj_platform_brick);
-instance_destroy(obj_platform);
-instance_destroy(obj_platform_brick);
-instance_destroy(obj_small_hidraulic);
-instance_destroy(obj_big_hidraulic);
-instance_destroy(obj_detail);
+if instance_exists(obj_platform_brick){
+	instance_destroy(obj_platform_brick);
+}
+if instance_exists(obj_platform){
+	instance_destroy(obj_platform);
+}
+if instance_exists(obj_platform_brick){
+	instance_destroy(obj_platform_brick);
+}
+if instance_exists(obj_small_hidraulic){
+	instance_destroy(obj_small_hidraulic);
+}
+if instance_exists(obj_big_hidraulic){
+	instance_destroy(obj_big_hidraulic);
+}
+if instance_exists(obj_detail){
+	instance_destroy(obj_detail);
+}
+
 part_system_clear(global.partsys[0]);
 part_type_clear(global.part[0]);
 GOD.alarm[0] = 2;
