@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "67c8b58a-3f02-456e-9b72-348e6601b6a9",
+            "Value": {
+                "id": "a331dbb5-13a1-42d3-88ee-28f0769d3c6e",
+                "resourcePath": "sprites\\spr_safezone1\\spr_safezone1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6aaa3a0d-44a7-4351-91c7-c15a24a5d3c3",
             "Value": {
                 "id": "697b8ebc-3728-4d6f-92ce-3667e835cc0a",
