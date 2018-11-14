@@ -9,7 +9,7 @@ with(obj_bigger_shit){
 
 if instance_exists(int_GUI){
 	switch(global.level){
-		case(2):
+		case(3):
 			if col_s < 5{
 				col_s +=1;
 			}
