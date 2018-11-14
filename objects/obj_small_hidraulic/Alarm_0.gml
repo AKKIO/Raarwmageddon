@@ -5,4 +5,4 @@ for(i = 0; i < 96; i++){
 		instance_destroy();
 	}
 }
-image_blend = global.c_redme
+image_blend = global.color_now;

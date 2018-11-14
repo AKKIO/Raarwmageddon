@@ -1,3 +1,3 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-image_blend = global.c_redme;
+image_blend = global.color_now;

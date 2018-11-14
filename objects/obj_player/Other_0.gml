@@ -7,7 +7,7 @@ if instance_exists(int_rng_world){
 	instance_destroy(int_rng_world);
 }
 
-global.scr +=1;
+global.level +=1;
 
 int_camera.x = room_width/2;
 int_camera.y = room_height+64;

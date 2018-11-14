@@ -1,6 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-global.scr = 0;
+global.level = 0;
 
 
 ideal_width = 256;
