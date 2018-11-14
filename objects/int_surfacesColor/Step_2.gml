@@ -8,15 +8,10 @@ with(obj_bigger_shit){
 }
 
 if instance_exists(int_GUI){
-	/*switch(global.level){
-		case(2):
-			if col_s < 1{
-				col_s +=1;
-			}
-		break;
-	}*/
-	
-	col_s = round((global.level/3)+.1)
+	if global.counter > 32{
+		global.counter = 0;
+	}
+	col_s = round((global.counter/3)-.3)
 
 }
 

@@ -8,6 +8,7 @@ if instance_exists(int_rng_world){
 }
 
 global.level +=1;
+global.counter +=1;
 
 int_camera.x = room_width/2;
 int_camera.y = room_height+64;
