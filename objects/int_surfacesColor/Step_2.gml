@@ -8,17 +8,16 @@ with(obj_bigger_shit){
 }
 
 if instance_exists(int_GUI){
-	switch(global.level){
-		case(3):
-			if col_s < 5{
+	/*switch(global.level){
+		case(2):
+			if col_s < 1{
 				col_s +=1;
 			}
 		break;
-	}
+	}*/
+	
+	col_s = round((global.level/3)+.1)
 
 }
 
-switch(col_s){
-	case(0): global.color_now = c_redme break;
-	case(1): global.color_now = c_pinkme break;
-}
+global.color_now = color[col_s];
