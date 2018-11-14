@@ -28,6 +28,8 @@ if tile = 4{
 	tile = 0;
 }
 
-if distance_to_object(obj_shit) < 10 || distance_to_object(obj_bigger_shit) < 24{
-	instance_destroy();
+if instance_exists(obj_shit) || instance_exists(obj_bigger_shit){
+	if distance_to_object(obj_shit) < 10 || distance_to_object(obj_bigger_shit) < 24{
+		instance_destroy();
+	}
 }

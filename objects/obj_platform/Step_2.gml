@@ -6,10 +6,9 @@ if (instance_exists(obj_player)){
 		else mask_index = spr_platform;
 	}
 }
-if distance_to_object(obj_shit) < 1 || distance_to_object(obj_bigger_shit) < 4{
-	instance_destroy();
-}
 
-/*if !instance_exists(int_rng_world){
-	instance_destroy();
-}*/
+if instance_exists(obj_shit) || instance_exists(obj_bigger_shit){
+	if distance_to_object(obj_shit) < 1 || distance_to_object(obj_bigger_shit) < 4{
+		instance_destroy();
+	}
+}
