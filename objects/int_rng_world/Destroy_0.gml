@@ -41,11 +41,14 @@ if instance_exists(obj_detail){
 	instance_destroy(obj_detail);
 }
 
-if part_system_exists(global.partsys[0]){
+/*if part_system_exists(global.partsys[0]){
 	part_system_clear(global.partsys[0]);
 }
 if part_type_exists(global.part[0]){
 	part_type_clear(global.part[0]);
+}*/
+part_particles_clear(global.part[0]) {
+	
 }
 GOD.alarm[0] = 2;
 instance_create_layer(room_width/2, (room_height)-(32), "ly_objects", obj_small_hidraulic)//firs hidraulic
