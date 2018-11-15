@@ -46,3 +46,4 @@ part_particles_clear(global.part[0]) {
 }
 GOD.alarm[0] = 2;
 instance_create_layer(room_width/2, (room_height)-(32), "ly_objects", obj_small_hidraulic)//firs hidraulic
+int_shitmaker.alarm[0] = 60;

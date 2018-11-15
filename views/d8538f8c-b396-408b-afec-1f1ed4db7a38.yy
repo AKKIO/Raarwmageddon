@@ -18,7 +18,8 @@
         "1b7f6943-68f0-4542-9f15-5f280c44a0fb",
         "a2474ecc-b6fa-46ba-924d-dfc42d917692",
         "89bd7079-8c58-4de9-9ab3-338adaa9457f",
-        "5efbd749-3538-4a6b-aed4-3f983ee36452"
+        "5efbd749-3538-4a6b-aed4-3f983ee36452",
+        "56cae459-7c79-47ec-8f78-64c605cb87f6"
     ],
     "filterType": "GMObject",
     "folderName": "grp_objects",

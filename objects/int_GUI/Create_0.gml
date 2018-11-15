@@ -23,5 +23,5 @@ for(var i = 1; i <=room_height; i++){
 
 display_set_gui_size(ideal_width, ideal_height);
 
-/*surface_resize(application_surface, ideal_width, ideal_height);
-window_set_size(ideal_width, ideal_height);
+inc = 10;
+rot = 0;

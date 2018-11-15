@@ -16,3 +16,9 @@ for(var b = 0; b <=14; b++){
 		instance_create_layer(56+(b*16), (room_height-20)-(bb*16), "ly_barrier", obj_barrier);
 	}
 }
+
+for(var b = 0; b <=14; b++){
+	for(var bb = 0; bb <=5; bb++){
+		instance_create_layer(56+(b*16), (bb*16), "ly_barrier", obj_safezonetop);
+	}
+}

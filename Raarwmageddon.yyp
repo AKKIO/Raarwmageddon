@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "56cae459-7c79-47ec-8f78-64c605cb87f6",
+            "Value": {
+                "id": "7562cbfa-e61f-4200-8610-d9d38c62801a",
+                "resourcePath": "objects\\obj_safezonetop\\obj_safezonetop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5897bc36-cf43-416d-ac3e-2e7e82713d70",
             "Value": {
                 "id": "39b9f1c0-b002-4df4-9aae-509f280b369e",
