@@ -8,6 +8,8 @@ move	= 0;
 jspd	= 7;
 roll	= 0;
 
+hugging = 0;
+
 image_speed = 1.25
 
 dir = 0;

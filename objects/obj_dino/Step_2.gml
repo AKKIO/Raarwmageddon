@@ -4,11 +4,23 @@ key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 key_left  = keyboard_check(ord("A")) || keyboard_check(vk_left);
 key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 key_jump  = keyboard_check(vk_space);
+key_roll = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_shift);
 if instance_exists(obj_player){
 	if place_meeting(x, y, obj_player){
-		if key_up && state = 0{
-			state = 1;
+		if hug <= hug_max && state = 0{
+			hug++
 		}
+		if obj_player.state = 1 && obj_player.move !=0{
+			hug+=3;
+		}
+	}else{
+		hug = 0;
+	}
+	
+	if hug >= hug_max && state = 0 && hugnt = 0 && obj_player.hugging !=1{
+		state = 1;
+		hug = 0;
+		obj_player.hugging = 1;
 	}
 	
 	if state > 0{
@@ -16,8 +28,10 @@ if instance_exists(obj_player){
 		y = obj_player.y;
 		image_index = obj_player.image_index;
 		image_xscale = obj_player.image_xscale;
-		if keyboard_check(vk_shift){
+		if key_roll{
 			state = 0;
+			hugnt = 30;
+			obj_player.hugging = 0;
 		}
 	}
 }
@@ -62,4 +76,7 @@ if state = 0{
 	    vspd = 0;
 	}
 	y += vspd;
+}
+if hugnt > 0{
+	hugnt--;
 }
