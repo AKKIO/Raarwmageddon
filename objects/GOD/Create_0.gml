@@ -1,5 +1,8 @@
 /// @description start vars
 
+//vars
+global.details = 6;
+
 //create instances and objects
 instance_create_layer(room_width/2, (room_height)-(48), "ly_objects", obj_player)//player
 instance_create_layer(0, 0, "ly_instances", int_rng_world)//world generator
