@@ -15,8 +15,11 @@ if !instance_exists(obj_player){
 	rot=inc*sin(inc)+0
 	inc+=.02
 	draw_set_valign(fa_middle);
-	draw_text_transformed_color(ideal_width/2, ideal_height/2, "GAME OVER",
-	2, 2, rot, global.color_now, global.color_now, global.color_now, global.color_now, 1);
+	draw_text_transformed_color(ideal_width/2, ideal_height/2, txt,
+	sz, sz, dir, global.color_now, global.color_now, global.color_now, global.color_now, 1);
+	if intext <= 5{
+		dir = rot;
+	}
 	
 	draw_text_transformed_color((ideal_width/2), (ideal_height/2)+64, "PRESS SPACE TO CONTINUE",
 	.5, .5, 0, c_white, c_white, c_white, c_white, 1);

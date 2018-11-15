@@ -25,3 +25,13 @@ display_set_gui_size(ideal_width, ideal_height);
 
 inc = 10;
 rot = 0;
+dir = 0;
+txt = "."
+sz = 2;
+intext = irandom(100)
+if intext <= 5{
+	txt = "WELCOME TO DARK SOULS B*TCH"
+	sz = 1;
+}else{
+	txt = "YOU DIED";
+}
