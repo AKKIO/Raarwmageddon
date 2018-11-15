@@ -30,7 +30,7 @@ txt = "."
 sz = 2;
 intext = irandom(100)
 if intext <= 5{
-	txt = "WELCOME TO DARK SOULS B*TCH"
+	txt = "WELCOME TO JUMP SOULS B*TCH"
 	sz = 1;
 }else{
 	txt = "YOU DIED";
