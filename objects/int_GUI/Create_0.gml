@@ -1,6 +1,7 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 global.level = 0;
+global.dinos = 0;
 
 
 ideal_width = 256;
