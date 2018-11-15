@@ -1,8 +1,5 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-for(i = 0; i < 96; i++){
-	if !place_free(x, y-i){
-		instance_destroy();
-	}
+if instance_exists(int_surfacesColor){
+	image_blend = global.color_now;
 }
-image_blend = global.color_now;

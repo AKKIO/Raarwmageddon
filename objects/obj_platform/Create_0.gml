@@ -12,7 +12,9 @@ if place_free(x, y-16){
 	if i <= 2{
 		detail.image_index = choose(2, 17);
 	}else if i >= 19{
-		detail.image_index = 1+irandom(global.details);
+		if instance_exists(GOD){
+			detail.image_index = 1+irandom(global.details);
+		}
 	}else{
 		var e = irandom(1)
 		if e = 1{
@@ -20,3 +22,5 @@ if place_free(x, y-16){
 		}
 	}
 }
+
+dino_block = instance_create_layer(x, y, "ly_platforms", obj_blockd);

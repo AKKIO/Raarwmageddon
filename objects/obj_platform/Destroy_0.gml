@@ -6,3 +6,5 @@ if xplo = 1{
 	instance_create_layer(x, y, "ly_platforms", obj_impact);
 }
 int_camera.scr = 1;
+
+instance_destroy(dino_block);

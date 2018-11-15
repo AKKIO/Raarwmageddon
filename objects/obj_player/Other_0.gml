@@ -9,12 +9,10 @@ if instance_exists(int_rng_world){
 
 global.level +=1;
 global.counter +=1;
-if global.details < 28{
-	global.details +=2;
-}else if global.details =26{
-	global.details++;
+if instance_exists(int_camera){
+	int_camera.x = room_width/2;
+	int_camera.y = room_height+64;
 }
-
-int_camera.x = room_width/2;
-int_camera.y = room_height+64;
-int_GUI.ly = room_height-63.15;
+if instance_exists(int_GUI){
+	int_GUI.ly = room_height-63.15;
+}
