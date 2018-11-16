@@ -25,7 +25,7 @@ randomize();
 
 instance_create_layer(x, y, "ly_instances", int_particle_sys);
 color = instance_create_layer(x, y, "ly_instances", int_surfacesColor);
-color.col_s = irandom(10);
+//color.col_s = irandom(10);
 make_rain = instance_create_layer(x, y, "ly_instances", int_shitmaker);
 make_rain.alarm[0] = 60*2;
 make_rain.delay = 60;
