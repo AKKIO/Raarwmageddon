@@ -6,4 +6,6 @@ if xplo = 1{
 	dest = instance_create_layer(x, y, "ly_platforms", obj_impact);
 	dest.image_blend = image_blend;
 }
-int_camera.scr = 1;
+if instance_exists(int_camera){
+		int_camera.scr = 1;
+	}

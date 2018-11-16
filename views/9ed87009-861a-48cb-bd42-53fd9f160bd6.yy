@@ -11,7 +11,8 @@
         "8b459d26-13fd-4417-bc33-8dcb1f1e2fc8",
         "5fc8210c-2086-491b-87d8-fbe770ccd51d",
         "1c5053d5-cff2-4dd3-bb5f-8f504291aac4",
-        "2bd563cb-698c-4617-8af7-94df47247530"
+        "2bd563cb-698c-4617-8af7-94df47247530",
+        "aa7e96d4-8139-49a6-8021-e9f67712d8ad"
     ],
     "filterType": "GMObject",
     "folderName": "grp_instances",

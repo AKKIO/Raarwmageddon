@@ -5,6 +5,8 @@ part_particles_create(global.partsys[0], x, y, global.part[0], i)
 if xplo = 1{
 	instance_create_layer(x, y, "ly_platforms", obj_impact);
 }
-int_camera.scr = 1;
+if instance_exists(int_camera){
+	int_camera.scr = 1;
+}
 
 instance_destroy(dino_block);

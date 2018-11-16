@@ -10,4 +10,4 @@ if shit < 2{
 	instance_create_layer(XX+16, YY, "ly_objects", obj_shit);
 	var shit = irandom(10);
 }
-alarm[0] = room_speed*2; 
+alarm[0] = delay; 

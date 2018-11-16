@@ -18,7 +18,7 @@ if instance_exists(int_GUI){
 }
 
 if instance_exists(int_shitmaker){
-	int_shitmaker.alarm[0] = 30;
+	int_shitmaker.alarm[0] = room_speed*2;
 }
 if hugging = 1{
 		global.dinos +=1;
