@@ -20,3 +20,8 @@ if instance_exists(int_GUI){
 if instance_exists(int_shitmaker){
 	int_shitmaker.alarm[0] = 30;
 }
+if hugging = 1{
+		global.dinos +=1;
+		instance_destroy(obj_dino);
+		hugging = 0;
+}
