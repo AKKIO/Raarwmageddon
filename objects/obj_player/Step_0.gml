@@ -1,19 +1,18 @@
 /// @description movement
 
 //inputs
-
-key_left  = keyboard_check(ord("A")) || keyboard_check(vk_left);
-key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
-key_jump  = keyboard_check_pressed(vk_space);
-key_roll = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_shift);
-key_down = keyboard_check(ord("S")) || keyboard_check(vk_down);
-
 if (gamepad_is_connected(0)) {
-	key_left  = gamepad_button_check(0,gp_padl);
-	key_right = gamepad_button_check(0,gp_padr);
-	key_jump  = gamepad_button_check_pressed(0,gp_face1);
-	key_roll = gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl);
-	key_down = gamepad_button_check(0,gp_padd);
+	key_left  = keyboard_check(ord("A")) || keyboard_check(vk_left) || gamepad_button_check(0,gp_padl);;
+	key_right = keyboard_check(ord("D")) || keyboard_check(vk_right) || gamepad_button_check(0,gp_padr);;
+	key_jump  = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0,gp_face1);;
+	key_roll = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl);;
+	key_down = keyboard_check(ord("S")) || keyboard_check(vk_down) || gamepad_button_check(0,gp_padd);
+}else{
+	key_left  = keyboard_check(ord("A")) || keyboard_check(vk_left);
+	key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
+	key_jump  = keyboard_check_pressed(vk_space);
+	key_roll = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_shift);
+	key_down = keyboard_check(ord("S")) || keyboard_check(vk_down);
 }
 
 //state to move and friction

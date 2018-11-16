@@ -24,7 +24,7 @@ if state = 3{
 }
 
 //lenght dir the smash
-var bbox = 6, boxl = 16, rheigh = 140;
+var bbox = 6, boxl = 16, rheigh = 128;
 for(var i = 0; i < rheigh; i++){
 	ly[0] = y+lengthdir_y(i, -90);
 	if (collision_point(x-bbox, ly[0]+boxl, obj_solid, false, true) || 
