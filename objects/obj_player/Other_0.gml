@@ -16,3 +16,7 @@ if instance_exists(int_camera){
 if instance_exists(int_GUI){
 	int_GUI.ly = room_height-63.15;
 }
+
+if instance_exists(int_shitmaker){
+	int_shitmaker.alarm[0] = 30;
+}
