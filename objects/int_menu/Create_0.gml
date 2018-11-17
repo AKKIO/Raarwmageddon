@@ -1,6 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-ideal_width = 256;
+ideal_width = 272 //336;
 ideal_height = 0;
 show = 120;
 

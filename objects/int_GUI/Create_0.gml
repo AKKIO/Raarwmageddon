@@ -4,7 +4,7 @@ global.level = 0;
 global.dinos = 0;
 
 
-ideal_width = 256;
+ideal_width = 272;
 ideal_height = 0;
 
 aspect_ratio = display_get_width()/display_get_height();
