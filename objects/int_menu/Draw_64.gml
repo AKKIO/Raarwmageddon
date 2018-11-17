@@ -1,11 +1,11 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-draw_sprite_ext(spr_LOGO, 0, (ideal_width/2)-1, (ideal_height/3), 2, 2, 0, c_black, 1)
-draw_sprite_ext(spr_LOGO, 0, (ideal_width/2)+1, (ideal_height/3), 2, 2, 0, c_black, 1)
-draw_sprite_ext(spr_LOGO, 0, (ideal_width/2), (ideal_height/3)-1, 2, 2, 0, c_black, 1)
-draw_sprite_ext(spr_LOGO, 0, (ideal_width/2), (ideal_height/3)+1, 2, 2, 0, c_black, 1)
+//draw_sprite_ext(spr_LOGO, 0, (ideal_width/2)-1, (ideal_height/3), 2, 2, 0, c_black, 1)
+//draw_sprite_ext(spr_LOGO, 0, (ideal_width/2)+1, (ideal_height/3), 2, 2, 0, c_black, 1)
+//draw_sprite_ext(spr_LOGO, 0, (ideal_width/2), (ideal_height/3)-1, 2, 2, 0, c_black, 1)
+//draw_sprite_ext(spr_LOGO, 0, (ideal_width/2), (ideal_height/3)+1, 2, 2, 0, c_black, 1)
 
-draw_sprite_ext(spr_LOGO, 0, ideal_width/2, (ideal_height/3), 2, 2, 0, c_white, 1)
+draw_sprite_ext(spr_LOGO, 0, ideal_width/2, (ideal_height/3), 1, 1, 0, c_white, 1)
 if show <=60{
 	draw_set_font(font_00);
 	draw_set_halign(fa_middle)
