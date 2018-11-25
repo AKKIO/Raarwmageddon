@@ -18,7 +18,7 @@ with(obj_smmsg2){
 with(obj_dmsg1){
 	image_blend = global.color_now;
 }
-with(obj_dmsg1){
+with(obj_dmsg2){
 	image_blend = global.color_now;
 }
 
