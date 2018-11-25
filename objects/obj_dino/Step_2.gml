@@ -34,6 +34,8 @@ if instance_exists(obj_player){
 			obj_player.hugging = 0;
 		}
 	}
+}else{
+	state = 0;
 }
 
 switch(dino){

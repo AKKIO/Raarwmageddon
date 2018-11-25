@@ -8,7 +8,7 @@ weird = 0;
 poppop = 0;
 platform_t = irandom(1);
 plt = obj_platform_brick;
-
+din_rng = irandom_range(15, 20);
 for (var yy = 1; yy <= 30; yy ++){
 	var XX = (5+irandom(10))*16;
 	platform = irandom(2);
@@ -23,6 +23,12 @@ for (var yy = 1; yy <= 30; yy ++){
 	if poppop = 1{
 		instance_create_layer(XX, YY-16, "ly_platforms", obj_small_hidraulic);
 	}
+	
+	//generate dino
+	if (yy = din_rng){
+		instance_create_layer(XX, YY-18, "ly_objects", obj_dino);
+	}
+	
 	if poppop = 2{
 		var gg = irandom(50);
 		if gg < 20{
