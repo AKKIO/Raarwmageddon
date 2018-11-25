@@ -9,7 +9,7 @@ ideal_height = 0;
 
 aspect_ratio = display_get_width()/display_get_height();
 
-ideal_height = round(ideal_width*(aspect_ratio)/1.15);
+ideal_height = round(ideal_width*(aspect_ratio)/1.2);
 
 if (ideal_height & 1){
 	ideal_height++;
