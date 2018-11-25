@@ -14,5 +14,12 @@ if instance_exists(int_GUI){
 	col_s = round((global.counter/3)-.3)
 
 }
+if instance_exists(int_GUI){
+	if difficulty < global.level && difficulty !=30{
+		difficulty++
+	}
+	global.dif = 1+((difficulty*6)/100);
+	
+}
 
 global.color_now = color[col_s];

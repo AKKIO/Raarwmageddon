@@ -38,7 +38,7 @@ if(!place_free(x, y + 1)){
 		vspd = -jspd;
 		land = 1;
 	}
-}else if key_jump && place_free(x, y+1) && smash_counter <= 0{
+}else if key_jump && place_free(x, y+1) && smash_counter <= 0 && y > 0{
 	ly_p = ly_min;
 	alarm[0] = 15;
 	alarm[1] = 2;

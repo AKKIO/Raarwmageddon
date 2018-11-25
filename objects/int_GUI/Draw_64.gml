@@ -14,6 +14,8 @@ if keyboard_check(ord("C")){
 	draw_text_transformed_color((ideal_width-ideal_width)-64, 48, global.counter, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);
 	draw_text_transformed_color((ideal_width-ideal_width)-64, 72, "DETAILS", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
 	draw_text_transformed_color((ideal_width-ideal_width)-64, 80, global.details, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);
+	draw_text_transformed_color((ideal_width-ideal_width)-64, 96, "DIFFICULTY", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_transformed_color((ideal_width-ideal_width)-64, 128, global.dif, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);
 }
 
 if !instance_exists(obj_player){

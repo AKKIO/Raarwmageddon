@@ -16,3 +16,8 @@ color[11]	= make_color_rgb(221, 11, 11);
 global.color_now = color[0] ;
 col_s = 0;
 global.counter = 0;
+
+difficulty = 0;
+global.dif = 0;
+
+
