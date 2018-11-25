@@ -19,19 +19,19 @@ void main()
 	
 	float alpha = texture2D( gm_BaseTexture, v_vTexcoord).a;
 	
-	alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord + offsetx).a);
-	alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord - offsetx).a);
-	alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord + offsety).a);
-	alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord - offsety).a);
+	//alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord + offsetx).a);
+	//alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord - offsetx).a);
+	//alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord + offsety).a);
+	//alpha += ceil(texture2D( gm_BaseTexture, v_vTexcoord - offsety).a);
 	
 	
 	gl_FragColor.r = ColorR;
 	gl_FragColor.g = ColorG;
 	gl_FragColor.b = ColorB;
 	
-	vec4 in_Colour = vec4(ColorR, ColorG, ColorB, 1.0);
+	vec4 in_Colour = vec4(ColorR, ColorG, ColorB, .5);
 	
-    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord ) + in_Colour;
+    gl_FragColor = in_Colour + v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 	gl_FragColor.a = alpha;
 	
 }
