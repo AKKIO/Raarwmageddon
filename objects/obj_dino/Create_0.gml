@@ -2,6 +2,7 @@
 // Puede escribir su código en este editor
 state = 0;
 dino = irandom(1);
+alarm[0] = room_speed;
 
 //normal dino
 sprite_fell = spr_dino_fall;
@@ -13,6 +14,8 @@ vspd	= 0;
 hug = 0;
 hugnt = 0;
 hug_max = 15;
+msg_allow = 0;
+msg = 0;
 
 //shader
 uPixelH = shader_get_uniform(sh_outline, "pixelH");

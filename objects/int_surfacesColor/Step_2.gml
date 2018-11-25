@@ -9,6 +9,18 @@ with(obj_bigger_shit){
 with(obj_cloud){
 	image_blend = global.color_now;
 }
+with(obj_smmsg1){
+	image_blend = global.color_now;
+}
+with(obj_smmsg2){
+	image_blend = global.color_now;
+}
+with(obj_dmsg1){
+	image_blend = global.color_now;
+}
+with(obj_dmsg1){
+	image_blend = global.color_now;
+}
 
 if instance_exists(int_GUI){
 	if global.counter > 32{

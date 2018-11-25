@@ -28,8 +28,8 @@ instance_create_layer(x, y, "ly_instances", int_cloud_rng);
 color = instance_create_layer(x, y, "ly_instances", int_surfacesColor);
 //color.col_s = irandom(10);
 make_rain = instance_create_layer(x, y, "ly_instances", int_shitmaker);
-make_rain.alarm[0] = 60*2;
-make_rain.delay = 60;
+make_rain.alarm[0] = 60;
+make_rain.delay = 30;
 
 
 platform = irandom(2);
@@ -37,6 +37,7 @@ weird = 0;
 poppop = 0;
 platform_t = irandom(1);
 plt = obj_platform_brick;
+din_rng = 15;
 
 for (var yy = 1; yy <= 30; yy ++){
 	var XX = 48+(room_width/3)+(irandom(10))*16;
@@ -59,6 +60,11 @@ for (var yy = 1; yy <= 30; yy ++){
 		}else{
 			instance_create_layer(XX, YY-16, "ly_platforms", obj_small_hidraulic);
 		}
+	}
+	
+	if (yy = din_rng){
+		din_allow = 1;
+		instance_create_layer(XX, YY-18, "ly_objects", obj_dino);
 	}
 	
 	switch(platform){

@@ -33,6 +33,17 @@ if instance_exists(obj_player){
 			hugnt = 30;
 			obj_player.hugging = 0;
 		}
+		if msg_allow = 0{
+			msg_allow = 1;
+			switch(dino){
+				case(0): msg = instance_create_layer(x, y-16, "ly_instances", obj_dmsg2) break;//mesagge 1 normal dino
+				case(1): msg = instance_create_layer(x, y-16, "ly_instances", obj_smmsg2) break;//mesage 1 smoking dino
+			}
+		}
+		if instance_exists(msg){
+			msg.x = x-(image_xscale*6);
+			msg.y = y-18
+		}
 	}
 }else{
 	state = 0;
@@ -73,6 +84,9 @@ if state = 1{
 }
 
 if state = 0{
+	//moods
+	msg_allow = 0;
+	
 	//gravity
 	if !place_meeting(x, y+1, obj_blockd){
 		vspd += grav; //Apply gravity
