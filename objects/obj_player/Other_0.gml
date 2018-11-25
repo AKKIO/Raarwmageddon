@@ -24,4 +24,6 @@ if hugging = 1{
 		global.dinos +=1;
 		instance_destroy(obj_dino);
 		hugging = 0;
+}else{
+	instance_destroy(obj_dino);
 }

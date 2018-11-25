@@ -30,3 +30,9 @@ land = 0;
 dust = 0;
 dirt = instance_create_layer(x, y, "ly_platforms", obj_rundust)
 instance_create_layer(x, y, "ly_instances", obj_follower);
+
+//shader
+uPixelH = shader_get_uniform(sh_outline, "pixelH");
+uPixelW = shader_get_uniform(sh_outline, "pixelW");
+texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
+texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));

@@ -6,7 +6,7 @@ show = 120;
 
 aspect_ratio = display_get_width()/display_get_height();
 
-ideal_height = round(ideal_width*aspect_ratio);
+ideal_height = round(ideal_width*(aspect_ratio)/1.15);
 
 if (ideal_height & 1){
 	ideal_height++;

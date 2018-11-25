@@ -9,6 +9,7 @@ poppop = 0;
 platform_t = irandom(1);
 plt = obj_platform_brick;
 din_rng = irandom_range(15, 20);
+din_allow = 0;
 for (var yy = 1; yy <= 30; yy ++){
 	var XX = (5+irandom(10))*16;
 	platform = irandom(2);
@@ -25,7 +26,8 @@ for (var yy = 1; yy <= 30; yy ++){
 	}
 	
 	//generate dino
-	if (yy = din_rng){
+	if (yy = din_rng) && din_allow = 0{
+		din_allow = 1;
 		instance_create_layer(XX, YY-18, "ly_objects", obj_dino);
 	}
 	
