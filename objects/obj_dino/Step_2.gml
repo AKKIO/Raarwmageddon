@@ -39,11 +39,19 @@ if instance_exists(obj_player){
 }
 
 switch(dino){
-	case(0):
+	case(0)://normal dino
 		if state = 0{
 			sprite_index = spr_dino_fall;
 		}else if state = 1{
 			sprite_index = spr_dino_idle;
+		}
+	break
+	
+	case(1)://smoking dino
+		if state = 0{
+			sprite_index = spr_smdino_fall;
+		}else if state = 1{
+			sprite_index = spr_smdino_idle;
 		}
 	break
 }
@@ -51,13 +59,15 @@ switch(dino){
 if state = 1{
 	if key_left || key_right{
 		switch(dino){
-			case(0): sprite_index = spr_dino_run break;
+			case(0): sprite_index = spr_dino_run break;//normal dino
+			case(1): sprite_index = spr_smdino_run break;//smoking dino
 		}
 		
 	}
 	if key_jump{
 		switch(dino){
-			case(0): sprite_index = spr_dino_jump break;
+			case(0): sprite_index = spr_dino_jump break;//normal dino
+			case(1): sprite_index = spr_smdino_jump break;//smoking dino
 		}
 	}
 }

@@ -1,7 +1,7 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 state = 0;
-dino = 0;
+dino = irandom(1);
 
 //normal dino
 sprite_fell = spr_dino_fall;
