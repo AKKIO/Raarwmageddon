@@ -4,15 +4,16 @@ global.level = 0;
 global.dinos = 0;
 
 
-ideal_width = 272;
-ideal_height = 0;
+ideal_width = 0; //336;
+ideal_height = 360;
+show = 120;
 
 aspect_ratio = display_get_width()/display_get_height();
 
-ideal_height = round(ideal_width*(aspect_ratio)/1.2);
+ideal_width = round(ideal_height*(aspect_ratio));
 
-if (ideal_height & 1){
-	ideal_height++;
+if (ideal_width & 1){
+	ideal_width++;
 }
 
 for(var i = 1; i <=room_height; i++){

@@ -11,7 +11,7 @@ plt = obj_platform_brick;
 din_rng = irandom_range(15, 20);
 din_allow = 0;
 for (var yy = 1; yy <= 30; yy ++){
-	var XX = (5+irandom(10))*16;
+	var XX = 48+(room_width/3)+(irandom(10))*16;
 	platform = irandom(2);
 	platform_t = irandom(1);
 	if platform_t = 0{

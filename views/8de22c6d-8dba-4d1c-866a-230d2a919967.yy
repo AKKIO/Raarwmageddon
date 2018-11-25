@@ -19,7 +19,8 @@
         "04b95daf-d914-435f-a9de-f8b458dd27ab",
         "67c8b58a-3f02-456e-9b72-348e6601b6a9",
         "a5cf0e39-14d3-4aac-ad22-356dee1e62c2",
-        "cd657f79-6a0b-43bc-952f-b49808b29cca"
+        "cd657f79-6a0b-43bc-952f-b49808b29cca",
+        "c6a13836-c8a3-42f4-a26d-4a817f2af8e3"
     ],
     "filterType": "GMSprite",
     "folderName": "grp_objects",

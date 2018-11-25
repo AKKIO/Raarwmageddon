@@ -1,15 +1,15 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-ideal_width = 272 //336;
-ideal_height = 0;
+ideal_width = 0; //336;
+ideal_height = 360;
 show = 120;
 
 aspect_ratio = display_get_width()/display_get_height();
 
-ideal_height = round(ideal_width*(aspect_ratio)/1.35);
+ideal_width = round(ideal_height*(aspect_ratio));
 
-if (ideal_height & 1){
-	ideal_height++;
+if (ideal_width & 1){
+	ideal_width++;
 }
 
 for(var i = 1; i <=room_height; i++){
@@ -24,6 +24,7 @@ display_set_gui_size(ideal_width, ideal_height);
 randomize();
 
 instance_create_layer(x, y, "ly_instances", int_particle_sys);
+instance_create_layer(x, y, "ly_instances", int_cloud_rng);
 color = instance_create_layer(x, y, "ly_instances", int_surfacesColor);
 //color.col_s = irandom(10);
 make_rain = instance_create_layer(x, y, "ly_instances", int_shitmaker);
@@ -38,7 +39,7 @@ platform_t = irandom(1);
 plt = obj_platform_brick;
 
 for (var yy = 1; yy <= 30; yy ++){
-	var XX = (5+irandom(10))*16;
+	var XX = 48+(room_width/3)+(irandom(10))*16;
 	platform = irandom(2);
 	platform_t = irandom(1);
 	if platform_t = 0{

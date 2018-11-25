@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var XX = (4+irandom(11))*16;
+var XX = 32+(room_width/3)+(irandom(12))*16;
 var shit = irandom(10);
 var YY = yy-40;
 if shit < 2{

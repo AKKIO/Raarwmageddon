@@ -6,6 +6,9 @@ with(obj_shit){
 with(obj_bigger_shit){
 	image_blend = global.color_now;
 }
+with(obj_cloud){
+	image_blend = global.color_now;
+}
 
 if instance_exists(int_GUI){
 	if global.counter > 32{
