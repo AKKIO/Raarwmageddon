@@ -1,6 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-if less > 0{
+/*if less > 0{
 	draw_set_font(font_00);
 	draw_set_halign(fa_center);
 	if instance_exists(int_surfacesColor) && show_scr != 0 && instance_exists(obj_player){
