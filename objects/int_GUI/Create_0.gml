@@ -2,7 +2,12 @@
 // Puede escribir su código en este editor
 global.level = 0;
 global.dinos = 0;
-
+global.scr = 0;
+global.mult_scr = 0;
+global.temp_scr = 0;
+show_scr = 0;
+score_gui = 0;
+less = 0;
 
 ideal_width = 0; //336;
 ideal_height = 360;

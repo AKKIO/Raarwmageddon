@@ -6,3 +6,5 @@ tile = 0;
 sprite_index = -1;
 
 alarm[0] = 2;
+
+gv_scr = 10;

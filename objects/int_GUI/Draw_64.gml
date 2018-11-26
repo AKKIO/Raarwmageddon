@@ -9,6 +9,9 @@ draw_text_transformed_color((ideal_width-ideal_width)+64, 16, global.level, 1.5,
 draw_text_transformed_color((ideal_width-ideal_width)+64, 48, "DINOS", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
 draw_text_transformed_color((ideal_width-ideal_width)+64, 56, global.dinos, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);
 
+draw_text_transformed_color((ideal_width-ideal_width)+64, 88, "SCORE", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+draw_text_transformed_color((ideal_width-ideal_width)+64, 96, score_gui, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);
+
 if keyboard_check(ord("C")){
 	draw_text_transformed_color((ideal_width-ideal_width)+64, 40, "COUNTER", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
 	draw_text_transformed_color((ideal_width-ideal_width)+64, 48, global.counter, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);

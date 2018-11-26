@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "9353f169-1895-4625-bd76-1d362db34c5f",
+            "Value": {
+                "id": "69fca3e1-9886-406f-9dbe-4431503de368",
+                "resourcePath": "objects\\obj_scr_part\\obj_scr_part.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "94241c4b-8e8d-4806-870a-76ff7f6c4891",
             "Value": {
                 "id": "cd80ebfe-6bab-48ce-820f-46de0a3bcbf2",

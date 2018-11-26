@@ -24,6 +24,14 @@ if hugging = 1{
 		global.dinos +=1;
 		instance_destroy(obj_dino);
 		hugging = 0;
+		global.temp_scr = global.mult_scr*2;
 }else{
 	instance_destroy(obj_dino);
+}
+
+if instance_exists(int_GUI){
+	global.scr += global.temp_scr;
+	global.temp_scr = 0;
+	global.mult_scr = 0;
+	int_GUI.show_scr = 0;
 }
