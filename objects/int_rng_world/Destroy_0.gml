@@ -7,6 +7,10 @@ if instance_exists(obj_platform){
 if instance_exists(obj_platform_brick){
 	obj_platform_brick.xplo = 0;
 }
+if instance_exists(obj_platform_sand){
+	obj_platform_sand.xplo = 0;
+	obj_platform_sand.sand = 1;
+}
 if instance_exists(obj_small_hidraulic){
 	obj_small_hidraulic.xplo = 0;
 }
@@ -30,6 +34,9 @@ if instance_exists(obj_platform){
 }
 if instance_exists(obj_platform_brick){
 	instance_destroy(obj_platform_brick);
+}
+if instance_exists(obj_platform_sand){
+	instance_destroy(obj_platform_sand);
 }
 if instance_exists(obj_small_hidraulic){
 	instance_destroy(obj_small_hidraulic);

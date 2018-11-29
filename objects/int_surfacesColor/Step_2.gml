@@ -68,7 +68,7 @@ switch(style){
 		
 		
 		
-		if instance_exists(int_GUI){
+		if instance_exists(int_GUI) && !instance_exists(int_menu){
 			if global.counter > 14{
 				global.counter = 0;
 			}
@@ -85,6 +85,11 @@ switch(style){
 					col_s = 16;
 				break
 			}
+		}else if instance_exists(int_menu) && style = 1{
+			var back_id = layer_background_get_id("ly_bkg")
+			layer_background_blend(back_id, global.color_now);
+			
+			col_s = 12;
 		}
 	break;
 }
@@ -99,7 +104,3 @@ if instance_exists(int_GUI){
 
 global.color_now = color[col_s];
 global.second_detail_color = color[col_s+1];
-
-if instance_exists(int_menu){
-	style = 0;
-}

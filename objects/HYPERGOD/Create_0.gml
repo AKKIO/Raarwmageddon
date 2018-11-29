@@ -6,7 +6,7 @@ if !directory_exists("save_files"){
 
 ini_open(working_directory + "/save_files/"+"save.ini");
 if !ini_section_exists("options"){
-	ini_write_real("options", "style", 0);
+	ini_write_real("options", "style", 1);
 }
 var st_decrypt = ini_read_string("options", "style", 0);
 st = real(base64_decode(st_decrypt));

@@ -13,11 +13,13 @@ din_allow = 0;
 for (var yy = 1; yy <= 30; yy ++){
 	var XX = 48+(room_width/3)+(irandom(10))*16;
 	platform = irandom(2);
-	platform_t = irandom(1);
+	platform_t = irandom(2);
 	if platform_t = 0{
 		plt = obj_platform;
 	}else if platform_t = 1{
 		plt = obj_platform_brick;
+	}else if platform_t = 2{
+		plt = obj_platform_sand;
 	}
 	var YY = yy*48;
 	poppop = irandom(4);
