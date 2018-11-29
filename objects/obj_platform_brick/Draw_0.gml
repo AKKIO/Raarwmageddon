@@ -2,11 +2,11 @@
 // You can write your code in this editor
 if hp = 2{
 	if draw_a = 1{
-		draw_sprite_ext(spr_platform_brick, tile, x, y, image_xscale, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_platform_brick, tile, x, y, image_xscale, 1, 0, image_blend, 1);
 	}
 }else{
 	if draw_a = 1{
-	draw_sprite_ext(spr_platform_brickd, tile, x, y, image_xscale, 1, 0, c_white, 1);
+	draw_sprite_ext(spr_platform_brickd, tile, x, y, image_xscale, 1, 0, image_blend, 1);
 	}
 }
 if keyboard_check(ord("C")){

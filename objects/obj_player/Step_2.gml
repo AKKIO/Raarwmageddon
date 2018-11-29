@@ -63,3 +63,9 @@ ly_min = min(ly[0], ly[1], ly[2]);
 if !place_meeting(x, y, obj_barrier){
 	instance_destroy(obj_barrier);
 }
+
+if instance_exists(int_surfacesColor){
+	if int_surfacesColor.style = 1{
+		image_blend = global.second_detail_color;
+	}
+}

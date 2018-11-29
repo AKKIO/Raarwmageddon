@@ -989,6 +989,14 @@
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "ff587b15-24a3-45c4-8866-8fa6187b9414",
+            "Value": {
+                "id": "8e4417bf-5195-4522-ab2e-52b6baab1d59",
+                "resourcePath": "objects\\HYPERGOD\\HYPERGOD.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [

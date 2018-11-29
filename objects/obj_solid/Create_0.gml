@@ -18,3 +18,5 @@ if place_free(x, y-16){
 }
 
 dino_block = instance_create_layer(x, y, "ly_platforms", obj_blockd);
+
+alarm[1] = 2;

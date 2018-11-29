@@ -23,10 +23,17 @@ if keyboard_check(ord("C")){
 
 if !instance_exists(obj_player){
 	rot=inc*sin(inc)+0
+	if instance_exists(int_surfacesColor){
+		if int_surfacesColor.style = 0{
+			var color_right = global.color_now
+		}else{
+			var color_right = global.second_detail_color;
+		}
+	}
 	inc+=.02
 	draw_set_valign(fa_middle);
 	draw_text_transformed_color(ideal_width/2, ideal_height/2, txt,
-	sz, sz, dir, global.color_now, global.color_now, global.color_now, global.color_now, 1);
+	sz, sz, dir, color_right, color_right, color_right, color_right, 1);
 	if intext <= 5{
 		dir = rot;
 	}

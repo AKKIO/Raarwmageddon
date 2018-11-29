@@ -12,3 +12,11 @@ if place_free(x, y-16){
 		}
 	}
 }
+
+if instance_exists(int_surfacesColor){
+	if int_surfacesColor.style = 1{
+		image_blend = global.color_now;
+	}else{
+		image_blend = c_white;
+	}
+}

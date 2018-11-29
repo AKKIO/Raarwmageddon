@@ -7,3 +7,4 @@ if !place_free(x, y){
 if !place_empty(x, y){
 	instance_destroy();
 }
+alarm[0] = 2;

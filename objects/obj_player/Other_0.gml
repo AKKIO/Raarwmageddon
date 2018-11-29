@@ -8,7 +8,13 @@ if instance_exists(int_rng_world){
 }
 
 global.level +=1;
-global.counter +=1;
+if instance_exists(int_surfacesColor){
+	if int_surfacesColor.style = 0{
+		global.counter +=1;
+	}else{
+		global.counter+=1;
+	}
+}
 if instance_exists(int_camera){
 	int_camera.x = room_width/2;
 	int_camera.y = room_height+64;
