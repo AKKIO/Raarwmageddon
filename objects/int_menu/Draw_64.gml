@@ -24,7 +24,7 @@ if show <=60{
 	draw_text_transformed_color((ideal_width/2), (ideal_height/1.5)+1, "PRESS SPACE", 1, 1, 0, c_black, c_black, c_black, c_black, 1);
 	draw_text_transformed_color((ideal_width/2), (ideal_height/1.5)-1, "PRESS SPACE", 1, 1, 0, c_black, c_black, c_black, c_black, 1);
 	if instance_exists(int_surfacesColor){
-		draw_text_transformed_color(ideal_width/2, ideal_height/1.5, "PRESS SPACE", 1, 1, 0, col, global.color_now, global.color_now, global.color_now, 1);
+		draw_text_transformed_color(ideal_width/2, ideal_height/1.5, "PRESS SPACE", 1, 1, 0, col, col, col, col, 1);
 	}
 }
 if show >= 0{

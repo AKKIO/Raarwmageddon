@@ -3,6 +3,9 @@
 if xplo = 1{
 	instance_destroy(dino_block);
 	instance_create_layer(x, y, "ly_platforms", obj_impact);
+	if instance_exists(int_camera){
+		int_camera.scr = 1;
+	}
 	
 	var i = irandom_range(1, 2)
 	if instance_exists(int_surfacesColor){
@@ -14,9 +17,6 @@ if xplo = 1{
 	}
 	
 }
-if instance_exists(int_camera){
-	int_camera.scr = 1;
-}
 
 if sand = 0{
 	if tile = 0{
@@ -25,6 +25,7 @@ if sand = 0{
 	}else{
 		sand = instance_create_layer(x, y, "ly_platforms", obj_platform_sand_t);
 		sand.sprite_index = spr_platform_sand_t2;
+		sand.image_xscale = image_xscale;
 	}
 }
 if place_meeting(x, y-2, obj_detail){

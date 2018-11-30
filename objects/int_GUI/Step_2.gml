@@ -11,3 +11,4 @@ if instance_exists(obj_player){
 if score_gui < global.scr{
 	score_gui++;
 }
+clock++;
