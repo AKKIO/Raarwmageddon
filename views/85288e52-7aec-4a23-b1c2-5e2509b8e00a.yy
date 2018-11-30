@@ -6,7 +6,8 @@
     "children": [
         "44af47fc-94be-4f94-b28a-d9982a2b40cc",
         "5e48c3f2-8090-460c-8eac-106318414686",
-        "5ee7ca13-b935-4b2c-beda-6df0d4696960"
+        "5ee7ca13-b935-4b2c-beda-6df0d4696960",
+        "1fea61bd-9475-4392-b036-c44f2de285ab"
     ],
     "filterType": "GMSprite",
     "folderName": "grp_dinos",

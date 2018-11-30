@@ -1,4 +1,11 @@
 /// @description start vars
+ini_open(working_directory + "/save_files/"+"save.ini");
+decode_dino = ini_read_string("DINOS", "PLAYER", "0")
+var character = real(base64_decode(decode_dino))/pi;
+dino = round(character);
+ini_close();
+
+
 
 grav    = 0.4; //Gravity
 spd		= 2.5;
@@ -29,7 +36,6 @@ smash_allow = 0;
 land = 0;
 dust = 0;
 dirt = instance_create_layer(x, y, "ly_platforms", obj_rundust)
-instance_create_layer(x, y, "ly_instances", obj_follower);
 
 //shader
 uPixelH = shader_get_uniform(sh_outline, "pixelH");

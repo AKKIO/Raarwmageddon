@@ -27,10 +27,18 @@ if instance_exists(int_shitmaker){
 	int_shitmaker.alarm[0] = room_speed*2;
 }
 if hugging = 1{
+	if instance_exists(obj_dino){
+		if obj_dino.dino = 2{
+			ini_open(working_directory + "/save_files/"+"save.ini");
+			din_crypt[1] = base64_encode(string("499"))
+			ini_write_string("DINOS", "dino01", din_crypt[1]);
+			ini_close();
+		}
 		global.dinos +=1;
 		instance_destroy(obj_dino);
 		hugging = 0;
 		global.temp_scr = global.mult_scr*2;
+	}
 }else{
 	instance_destroy(obj_dino);
 }

@@ -2,6 +2,19 @@
 // Puede escribir su código en este editor
 state = 0;
 dino = irandom(1);
+
+ini_open(working_directory + "/save_files/"+"save.ini");
+decode_dino = ini_read_string("DINOS", "dino01", "0");
+var character = real(base64_decode(decode_dino));
+horn = round(character);
+ini_close();
+if horn = 0 && global.level = 4{
+	var growhorn = irandom(100);
+	if growhorn = 1{
+		dino = 2;
+	}
+}
+
 alarm[0] = room_speed;
 
 //normal dino

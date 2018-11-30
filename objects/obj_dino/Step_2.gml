@@ -38,6 +38,7 @@ if instance_exists(obj_player){
 			switch(dino){
 				case(0): msg = instance_create_layer(x, y-16, "ly_instances", obj_dmsg2) break;//mesagge 1 normal dino
 				case(1): msg = instance_create_layer(x, y-16, "ly_instances", obj_smmsg2) break;//mesage 1 smoking dino
+				case(2): msg = instance_create_layer(x, y-16, "ly_objects", obj_dmsg2) break;//mesagge 1 normal dino
 			}
 		}
 		if instance_exists(msg){
@@ -65,6 +66,14 @@ switch(dino){
 			sprite_index = spr_smdino_idle;
 		}
 	break
+	
+	case(2)://unicorn
+		if state = 0{
+			sprite_index = spr_dinocornnpc_fall;
+		}else if state = 1{
+			sprite_index = spr_dinocornnpc_idle;
+		}
+	break
 }
 
 if state = 1{
@@ -72,6 +81,7 @@ if state = 1{
 		switch(dino){
 			case(0): sprite_index = spr_dino_run break;//normal dino
 			case(1): sprite_index = spr_smdino_run break;//smoking dino
+			case(2): sprite_index = spr_dinocornnpc_run break;//unicorn
 		}
 		
 	}
@@ -79,6 +89,7 @@ if state = 1{
 		switch(dino){
 			case(0): sprite_index = spr_dino_jump break;//normal dino
 			case(1): sprite_index = spr_smdino_jump break;//smoking dino
+			case(2): sprite_index = spr_dinocornnpc_jump break;//unicorn
 		}
 	}
 }

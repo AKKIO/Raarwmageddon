@@ -2,7 +2,7 @@
     "id": "07fa2bed-20a3-41e9-9927-30eed9fe60d6",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_player_smash",
+    "name": "spr_player_smashss",
     "For3D": false,
     "HTile": false,
     "VTile": false,

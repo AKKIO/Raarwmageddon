@@ -1,18 +1,50 @@
 /// @description animations
 if state = 0{
 	if hspd > 0.2{
-		sprite_index = spr_player_walk;
+		switch(dino){
+			case(0):
+				sprite_index = spr_player_walk;
+			break;
+			
+			case(1):
+				sprite_index = spr_dinocorn_walk;
+			break;
+		}
 		image_xscale = 1;
 	}else if hspd < -0.2{
-		sprite_index = spr_player_walk;
+		switch(dino){
+			case(0):
+				sprite_index = spr_player_walk;
+			break;
+			
+			case(1):
+				sprite_index = spr_dinocorn_walk;
+			break;
+		}
 		image_xscale = -1;	
 	}else{
-		sprite_index = spr_player_idle;
+		switch(dino){
+			case(0):
+				sprite_index = spr_player_idle;
+			break;
+			
+			case(1):
+				sprite_index = spr_dinocorn_idle;
+			break;
+		}
 	}
 }
 
 if place_free(x, y+1){
-	sprite_index = spr_player_jump;
+	switch(dino){
+			case(0):
+				sprite_index = spr_player_jump;
+			break;
+			
+			case(1):
+				sprite_index = spr_dinocorn_jump;
+			break;
+		}
 	if image_index = 3{
 		image_speed = 0;	
 	}
@@ -20,7 +52,15 @@ if place_free(x, y+1){
 	image_speed = 1.25;	
 }
 if state = 3{
-	sprite_index = spr_player_jump;
+	switch(dino){
+			case(0):
+				sprite_index = spr_player_jump;
+			break;
+			
+			case(1):
+				sprite_index = spr_dinocorn_jump;
+			break;
+		}
 }
 
 //lenght dir the smash

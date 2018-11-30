@@ -85,7 +85,7 @@ switch(style){
 					col_s = 16;
 				break
 			}
-		}else if instance_exists(int_menu) && style = 1{
+		}else if instance_exists(int_menu) && style = 1 || instance_exists(int_chars) && style = 1{
 			var back_id = layer_background_get_id("ly_bkg")
 			layer_background_blend(back_id, global.color_now);
 			
