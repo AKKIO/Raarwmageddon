@@ -12,8 +12,37 @@ draw_text_transformed_color((ideal_width-ideal_width)+64, 56, global.dinos, 1.5,
 draw_text_transformed_color((ideal_width-ideal_width)+64, 88, "SCORE", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
 draw_text_transformed_color((ideal_width-ideal_width)+64, 96, score_gui, 1.5, 1.5, 0, global.color_now, global.color_now, global.color_now, global.color_now, 1);
 
-draw_text_transformed_color((ideal_width-ideal_width)+64, 136, "*", .5, .5, 0, c_white, c_white, c_white, c_white, 1);
-draw_text_transformed_color((ideal_width-ideal_width)+64, 164, clock, .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+if minute < 10{
+	if second < 10{
+		if ms < 10{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, "0"+string(minute)+":"+"0"+string(second)+":"+"0"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}else{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, "0"+string(minute)+":"+"0"+string(second)+":"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}
+	}else{
+		if ms < 10{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, "0"+string(minute)+":"+string(second)+":"+"0"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}else{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, "0"+string(minute)+":"+string(second)+":"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}
+	}
+}else{
+	if second < 10{
+		if ms < 10{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, string(minute)+":"+"0"+string(second)+":"+"0"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}else{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, string(minute)+":"+"0"+string(second)+":"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}
+	}else{
+		if ms < 10{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, string(minute)+":"+string(second)+":"+"0"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}else{
+			draw_text_transformed_color((ideal_width-ideal_width)+64, 128, string(minute)+":"+string(second)+":"+string(ms), .5, .5, 0, c_white, c_white, c_white, c_white, 1);
+		}
+	}
+	
+}
+
 
 if keyboard_check(ord("C")){
 	draw_text_transformed_color((ideal_width-ideal_width)+64, 40, "COUNTER", .5, .5, 0, c_white, c_white, c_white, c_white, 1);

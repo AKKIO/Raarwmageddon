@@ -11,4 +11,27 @@ if instance_exists(obj_player){
 if score_gui < global.scr{
 	score_gui++;
 }
-clock++;
+/*if step < room_speed{
+	step++
+}else{
+	step = 0;
+	second+=(delta_time*0.000001)*room_speed;
+}
+if second > 60{
+	second = 0;
+	minute++;
+}*/
+
+if !instance_exists(obj_barrier){
+	step +=(delta_time*0.000001)*room_speed;
+}
+if step >=60{
+	step = 0;
+	second++;
+}
+ms = round(step);
+
+if second >= 60{
+	second = 0;
+	minute++;
+}

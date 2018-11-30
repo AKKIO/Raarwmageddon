@@ -8,7 +8,11 @@ global.temp_scr = 0;
 show_scr = 0;
 score_gui = 0;
 less = 0;
-clock = 0;
+step = 0;
+ms = 0;
+second = 0
+minute = 0;
+
 
 ideal_width = 0; //336;
 ideal_height = 360;
