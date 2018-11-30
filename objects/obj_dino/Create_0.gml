@@ -8,10 +8,14 @@ decode_dino = ini_read_string("DINOS", "dino01", "0");
 var character = real(base64_decode(decode_dino));
 horn = round(character);
 ini_close();
-if horn = 0 && global.level = 4{
-	var growhorn = irandom(100);
-	if growhorn = 1{
-		dino = 2;
+if horn = 0{
+	if instance_exists(int_GUI){
+		if global.level = 4{
+			var growhorn = irandom(100);
+			if growhorn = 1{
+				dino = 2;
+			}
+		}
 	}
 }
 
