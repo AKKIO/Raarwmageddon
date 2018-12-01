@@ -12,7 +12,7 @@ if horn = 0{
 	if instance_exists(int_GUI){
 		if global.level = 4{
 			var growhorn = irandom(100);
-			if growhorn = 1{
+			if growhorn <= 25{
 				dino = 2;
 			}
 		}
