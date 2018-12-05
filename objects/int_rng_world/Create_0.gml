@@ -20,7 +20,7 @@ for (var topl = 0; topl <= 14; topl++){
 
 for (var yy = 2; yy <= 30; yy ++){
 	var XX = 48+(room_width/3)+(irandom(10))*16;
-	platform = irandom(1);
+	platform = irandom(2);
 	platform_t = irandom(1);
 	if platform_t = 0{
 		plt = obj_platform;
