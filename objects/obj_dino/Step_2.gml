@@ -117,3 +117,8 @@ if state = 0{
 if hugnt > 0{
 	hugnt--;
 }
+if instance_exists(obj_player){
+	if distance_to_object(obj_player) > 32{
+		state = 0;
+	}
+}

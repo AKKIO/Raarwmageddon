@@ -10,10 +10,18 @@ platform_t = irandom(1);
 plt = obj_platform_brick;
 din_rng = irandom_range(15, 20);
 din_allow = 0;
-for (var yy = 1; yy <= 30; yy ++){
+
+if instance_exists(int_GUI){
+	lvl_dif = (global.level*100)/30;
+}
+for (var topl = 0; topl <= 14; topl++){
+	instance_create_layer((16+(room_width/3))+(topl*16), y+48, "ly_platforms", obj_platform);
+}
+
+for (var yy = 2; yy <= 30; yy ++){
 	var XX = 48+(room_width/3)+(irandom(10))*16;
-	platform = irandom(2);
-	platform_t = irandom(2);
+	platform = irandom(1);
+	platform_t = irandom(1);
 	if platform_t = 0{
 		plt = obj_platform;
 	}else if platform_t = 1{
@@ -21,6 +29,13 @@ for (var yy = 1; yy <= 30; yy ++){
 	}else if platform_t = 2{
 		plt = obj_platform_sand;
 	}
+	var dif_plat = irandom(100);
+	if instance_exists(int_GUI){
+		if dif_plat <= lvl_dif{
+			plt = obj_platform_sand;
+		}
+	}
+	
 	var YY = yy*48;
 	poppop = irandom(4);
 	if poppop = 1{

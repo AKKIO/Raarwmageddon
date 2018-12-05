@@ -1,7 +1,7 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
+instance_destroy(dino_block);
 if xplo = 1{
-	instance_destroy(dino_block);
 	instance_create_layer(x, y, "ly_platforms", obj_impact);
 	if instance_exists(int_camera){
 		int_camera.scr = 1;
@@ -39,4 +39,7 @@ if place_meeting(x, y-2, obj_big_hidraulic){
 if place_meeting(x, y-2, obj_small_hidraulic){
 	det2 = instance_nearest(x, y, obj_small_hidraulic);
 	instance_destroy(det2);
+}
+if instance_exists(detail){
+	instance_destroy(detail);
 }

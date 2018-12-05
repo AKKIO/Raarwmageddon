@@ -29,3 +29,6 @@ if place_meeting(x, y-2, obj_small_hidraulic){
 	det2 = instance_nearest(x, y, obj_small_hidraulic);
 	instance_destroy(det2);
 }
+if instance_exists(detail){
+	instance_destroy(detail);
+}

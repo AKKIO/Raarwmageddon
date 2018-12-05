@@ -3,8 +3,8 @@
 if !part_system_exists(global.partsys[0]){
 	global.partsys[0] =part_system_create();
 }
-if !part_system_exists(global.part[0]){
-	global.part[0] = part_system_create();
+if !part_type_exists(global.part[0]){
+	global.part[0] = part_type_create();
 	part_type_sprite(global.part[0], spr_particle_00, 0, 0, 0);
 	part_type_gravity(global.part[0], .2, -90);
 	part_type_speed(global.part[0], 0, 1, .1, 0);

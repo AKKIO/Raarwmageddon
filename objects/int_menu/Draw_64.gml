@@ -9,7 +9,7 @@ if instance_exists(int_surfacesColor){
 	if int_surfacesColor.style = 1{
 		col = global.second_detail_color
 	}else{
-		col = c_white;
+		col = global.color_now;
 	}
 }
 
