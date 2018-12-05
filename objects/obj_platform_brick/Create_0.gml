@@ -6,9 +6,11 @@ draw_a = 0;
 allow_d = 0;
 hp = 2;
 xplo = 1;
+det_a = 0;
 
 if place_free(x, y-16){
 	detail = instance_create_layer(x, y-9, "ly_platforms", obj_detail);
+	det_a = 1;
 	var i = irandom(20);
 	if i <= 2{
 		detail.image_index = choose(2, 17);

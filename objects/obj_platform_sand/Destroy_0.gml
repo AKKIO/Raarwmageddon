@@ -28,10 +28,6 @@ if sand = 0{
 		sand.image_xscale = image_xscale;
 	}
 }
-if place_meeting(x, y-2, obj_detail){
-	det = instance_nearest(x, y, obj_detail);
-	instance_destroy(det);
-}
 if place_meeting(x, y-2, obj_big_hidraulic){
 	det1 = instance_nearest(x, y, obj_big_hidraulic);
 	instance_destroy(det1);
@@ -40,6 +36,8 @@ if place_meeting(x, y-2, obj_small_hidraulic){
 	det2 = instance_nearest(x, y, obj_small_hidraulic);
 	instance_destroy(det2);
 }
-if instance_exists(detail){
-	instance_destroy(detail);
+if det_a = 1{
+	if instance_exists(detail){
+		instance_destroy(detail);
+	}
 }
