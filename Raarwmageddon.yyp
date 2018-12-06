@@ -1191,6 +1191,14 @@
             }
         },
         {
+            "Key": "fbc811af-531f-4bdf-85e5-f0388192c1fb",
+            "Value": {
+                "id": "4f9750a3-6a02-4df1-a966-98fbaa5427b6",
+                "resourcePath": "sprites\\spr_small_dhidraulic\\spr_small_dhidraulic.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ff587b15-24a3-45c4-8866-8fa6187b9414",
             "Value": {
                 "id": "8e4417bf-5195-4522-ab2e-52b6baab1d59",

@@ -2,14 +2,19 @@
 // You can write your code in this editor
 if (instance_exists(obj_player)){
 	if distance_to_object(obj_player) < 128 {
-		if round((obj_player.bbox_bottom) > y-5) || distance_to_object(obj_player) < 8 && (obj_player.key_down) mask_index = -1;
-		else mask_index = spr_small_hidraulic;
+		if type = 0{
+			if round((obj_player.bbox_bottom) > y-4) || distance_to_object(obj_player) < 8 && (obj_player.key_down) mask_index = -1;
+			else mask_index = spr_small_xhidraulic;
+		}else{
+			if round((obj_player.bbox_bottom) > y-19) || distance_to_object(obj_player) < 8 && (obj_player.key_down) mask_index = -1;
+			else mask_index = spr_small_dhidraulic;
+		}
 	}
 }
 
 if instance_exists(obj_player){
 	if y > obj_player.y{
-		if distance_to_object(obj_player) < 12{
+		if distance_to_object(obj_player) < 8{
 			if obj_player.state = 3{
 				spd = 0.25;
 				tile = 1;

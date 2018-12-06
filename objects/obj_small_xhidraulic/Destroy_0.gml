@@ -7,3 +7,6 @@ if instance_exists(int_particle_sys){
 		int_camera.scr = 1;
 	}
 }
+if type = 1{
+	instance_create_layer(x, y-16, "ly_platforms", obj_soul);
+}

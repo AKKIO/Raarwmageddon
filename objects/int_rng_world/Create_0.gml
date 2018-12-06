@@ -65,7 +65,7 @@ for (var yy = 2; yy <= 30; yy ++){
 	}
 	
 	if poppop = 2{
-		instance_create_layer(XX, YY-16, "ly_platforms", hlt);
+		//instance_create_layer(XX, YY-16, "ly_platforms", hlt);
 	}
 	var dif_plat = irandom(100);
 	if instance_exists(int_GUI){
