@@ -72,7 +72,8 @@ for(var i = 0; i < rheigh; i++){
 	collision_point(x-bbox, ly[0]+boxl, obj_big_hidraulic, false, true) ||
 	collision_point(x-bbox, ly[0]+boxl, obj_platform, false, true) ||
 	collision_point(x-bbox, ly[0]+boxl, obj_platform_brick, false, true) ||
-	collision_point(x-bbox, ly[0]+boxl, obj_platform_sand, false, true)) {
+	collision_point(x-bbox, ly[0]+boxl, obj_platform_sand, false, true) ||
+	collision_point(x-bbox, ly[0]+boxl, obj_small_xhidraulic, false, true)) {
 		break;
 	}
 }
@@ -83,7 +84,8 @@ for(var e = 0; e < rheigh; e++){
 	collision_point(x, ly[1]+boxl, obj_big_hidraulic, false, true) ||
 	collision_point(x, ly[1]+boxl, obj_platform, false, true) ||
 	collision_point(x, ly[1]+boxl, obj_platform_brick, false, true)||
-	collision_point(x, ly[1]+boxl, obj_platform_sand, false, true)){
+	collision_point(x, ly[1]+boxl, obj_platform_sand, false, true)||
+	collision_point(x, ly[1]+boxl, obj_small_xhidraulic, false, true)){
 		break;
 	}
 }
@@ -94,7 +96,8 @@ for(var o = 0; o < rheigh; o++){
 	collision_point(x+bbox-1, ly[2]+boxl, obj_big_hidraulic, false, true) ||
 	collision_point(x+bbox-1, ly[2]+boxl, obj_platform, false, true) ||
 	collision_point(x+bbox-1, ly[2]+boxl, obj_platform_brick, false, true)||
-	collision_point(x+bbox-1, ly[2]+boxl, obj_platform_sand, false, true)){
+	collision_point(x+bbox-1, ly[2]+boxl, obj_platform_sand, false, true)||
+	collision_point(x+bbox-1, ly[2]+boxl, obj_small_xhidraulic, false, true)){
 		break;
 	}
 }

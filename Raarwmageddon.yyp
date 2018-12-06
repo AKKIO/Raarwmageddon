@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0dcd40e0-00aa-45d1-8af2-2388036edb67",
+            "Value": {
+                "id": "1a7f73d0-01fd-49df-93a3-5bd6ff25077d",
+                "resourcePath": "objects\\obj_soul\\obj_soul.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1067a8e0-1f83-44af-becc-7409754a484c",
             "Value": {
                 "id": "13f2a1fd-efde-4ab0-9bb5-4f1572e9ebc4",
@@ -148,6 +156,14 @@
                 "id": "b103cd9a-67aa-4eec-9cce-795bf57f8261",
                 "resourcePath": "views\\1fea61bd-9475-4392-b036-c44f2de285ab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "240fa3df-3e00-4da6-918e-528632ee1ea2",
+            "Value": {
+                "id": "cbbfc6ec-e9f7-41b3-b8dd-f74021350c4f",
+                "resourcePath": "sprites\\spr_soul\\spr_soul.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -299,6 +315,14 @@
             "Value": {
                 "id": "b0a77dee-3868-44e4-9e34-1d68679d5857",
                 "resourcePath": "sprites\\spr_platform\\spr_platform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "500fe068-0f6b-4651-8f75-350b849e725d",
+            "Value": {
+                "id": "a0eea9a2-838e-4690-a25a-b574348321bb",
+                "resourcePath": "sprites\\spr_small_xhidraulic\\spr_small_xhidraulic.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -548,6 +572,14 @@
                 "id": "94f03b53-af1c-4cf1-bf1b-70fdaa36ee5f",
                 "resourcePath": "sprites\\spr_impact\\spr_impact.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7fae8426-ee00-4e4b-b743-38d76e7617f7",
+            "Value": {
+                "id": "6fdee2d7-4cc1-4795-b299-16f72508628b",
+                "resourcePath": "objects\\obj_small_xhidraulic\\obj_small_xhidraulic.yy",
+                "resourceType": "GMObject"
             }
         },
         {
