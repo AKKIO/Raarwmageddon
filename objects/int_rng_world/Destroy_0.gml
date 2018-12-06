@@ -41,6 +41,9 @@ if instance_exists(obj_platform_sand){
 if instance_exists(obj_small_hidraulic){
 	instance_destroy(obj_small_hidraulic);
 }
+if instance_exists(obj_small_xhidraulic){
+	instance_destroy(obj_small_xhidraulic);
+}
 if instance_exists(obj_big_hidraulic){
 	instance_destroy(obj_big_hidraulic);
 }

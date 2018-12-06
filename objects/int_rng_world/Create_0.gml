@@ -44,7 +44,6 @@ for (var yy = 2; yy <= 30; yy ++){
 	}else if hidraulic_t = 1{
 		hlt = obj_big_hidraulic;
 	}
-	
 	if instance_exists(int_GUI){
 		var dif_hidraulic = irandom(100);
 		if dif_hidraulic <= lvl_difh{
@@ -54,7 +53,7 @@ for (var yy = 2; yy <= 30; yy ++){
 	
 	var YY = yy*48;
 	poppop = irandom(4);
-	if poppop = 1{
+	if poppop <= 1{
 		instance_create_layer(XX, YY-16, "ly_platforms", hlt);
 	}
 	
@@ -64,9 +63,6 @@ for (var yy = 2; yy <= 30; yy ++){
 		instance_create_layer(XX, YY-18, "ly_objects", obj_dino);
 	}
 	
-	if poppop = 2{
-		//instance_create_layer(XX, YY-16, "ly_platforms", hlt);
-	}
 	var dif_plat = irandom(100);
 	if instance_exists(int_GUI){
 		if dif_plat <= lvl_dif && lvl_dif !=0{
