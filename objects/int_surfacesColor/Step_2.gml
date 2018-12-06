@@ -94,7 +94,7 @@ switch(style){
 	break;
 }
 if instance_exists(int_GUI){
-	if difficulty < global.level && difficulty !=30{
+	if difficulty < global.level && difficulty !=60{
 		difficulty++
 	}
 	global.dif = 1+((difficulty*6)/100);
