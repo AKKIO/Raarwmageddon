@@ -12,15 +12,14 @@ din_rng = irandom_range(15, 20);
 din_allow = 0;
 
 if instance_exists(int_GUI){
-	//lvl_dif = ((global.level*100)/30);
 	if global.level > 15{
-		lvl_dif = ((global.level-15)*100/30)
+		lvl_dif = (((global.level-15)*100)/30);
 	}else if global.level < 15{
 		lvl_dif = 0;
 	}
 }
 for (var topl = 0; topl <= 14; topl++){
-	instance_create_layer((16+(room_width/3))+(topl*16), y+48, "ly_platforms", obj_platform);
+	instance_create_layer((16+(room_width/3))+(topl*16), y+48, "ly_platforms", obj_platform_brick);
 }
 
 for (var yy = 2; yy <= 30; yy ++){
