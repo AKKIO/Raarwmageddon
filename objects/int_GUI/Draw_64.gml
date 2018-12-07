@@ -55,7 +55,7 @@ if keyboard_check(ord("C")){
 }
 
 if !instance_exists(obj_player){
-	rot=inc*sin(inc)+0
+	/*rot=inc*sin(inc)+0
 	if instance_exists(int_surfacesColor){
 		if int_surfacesColor.style = 0{
 			var color_right = global.color_now
@@ -72,7 +72,19 @@ if !instance_exists(obj_player){
 	}
 	
 	draw_text_transformed_color((ideal_width/2), (ideal_height/2)+64, "PRESS SPACE TO CONTINUE",
-	.5, .5, 0, c_white, c_white, c_white, c_white, 1);
+	.5, .5, 0, c_white, c_white, c_white, c_white, 1);*/
+	
+	ini_open(working_directory + "/save_files/"+"save.ini");
+	var scr_decrypt = ini_read_string("Score", "highscore", "MAo=");
+	var scr_ = real(base64_decode(scr_decrypt));
+	if global.scr > ((scr_/7)/256){
+		var scr_crypt = base64_encode(string((global.scr*7)*256));
+		ini_write_string("Score", "highscore", scr_crypt);
+	}
+	ini_close();
+	
+	
+	
 }
 
 if less > 0{

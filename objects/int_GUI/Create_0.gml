@@ -35,7 +35,7 @@ for(var i = 1; i <=room_height; i++){
 
 display_set_gui_size(ideal_width, ideal_height);
 
-inc = 10;
+/*inc = 10;
 rot = 0;
 dir = 0;
 txt = "."

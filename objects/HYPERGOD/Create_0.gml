@@ -11,3 +11,9 @@ if !ini_section_exists("options"){
 var st_decrypt = ini_read_string("options", "style", 0);
 st = real(base64_decode(st_decrypt));
 ini_close();
+
+ini_open(working_directory + "/save_files/"+"save.ini");
+	if !ini_section_exists("Score"){
+		ini_write_string("Score", "highscore", "MAo=");
+	}
+ini_close();

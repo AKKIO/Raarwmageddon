@@ -503,14 +503,6 @@
             }
         },
         {
-            "Key": "72c0e0bc-aff8-447b-8efc-ca37884338c4",
-            "Value": {
-                "id": "605bce79-f2a2-4bdb-95d4-fec7aa75ecf8",
-                "resourcePath": "sprites\\spr_pointer\\spr_pointer.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "27018ba7-745a-45c7-bed1-b1c83202e468",
@@ -611,6 +603,14 @@
             "Value": {
                 "id": "d8d7b016-3a74-45af-94c5-f32bb6789b90",
                 "resourcePath": "sprites\\spr_big_hidraulic\\spr_big_hidraulic.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8757afce-2f1c-40dd-8bba-a962d34f1669",
+            "Value": {
+                "id": "5630b575-cf2b-4ce8-aca1-ecc73da0aa66",
+                "resourcePath": "sprites\\spr_char_hidraulic\\spr_char_hidraulic.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -919,14 +919,6 @@
             }
         },
         {
-            "Key": "c3cf3817-7574-4b68-b101-3e9afad4b3ad",
-            "Value": {
-                "id": "1a0492e7-3068-46a1-b9af-ce0314a78e75",
-                "resourcePath": "objects\\obj_pointer\\obj_pointer.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c4009a80-4332-4851-a156-8fd9a2034672",
             "Value": {
                 "id": "a9937027-0767-4242-a4d0-b5b1bf013522",
@@ -1092,6 +1084,14 @@
                 "id": "dfefcdd5-7de4-4cf5-80f1-bf4db12ddf20",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e4b58d65-db05-4e4e-a54c-c339c3a1ba37",
+            "Value": {
+                "id": "04af560b-059f-4656-a201-9c0945a53730",
+                "resourcePath": "objects\\obj_char_hidraulic\\obj_char_hidraulic.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,8 +1,8 @@
 {
-    "id": "c3cf3817-7574-4b68-b101-3e9afad4b3ad",
+    "id": "e4b58d65-db05-4e4e-a54c-c339c3a1ba37",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_pointer",
+    "name": "obj_char_hidraulic",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "72c0e0bc-aff8-447b-8efc-ca37884338c4",
+    "spriteId": "8757afce-2f1c-40dd-8bba-a962d34f1669",
     "visible": true
 }
