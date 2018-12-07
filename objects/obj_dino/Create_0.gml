@@ -10,7 +10,7 @@ horn = round(character);
 ini_close();
 if horn = 0{
 	if instance_exists(int_GUI){
-		if global.level = 4{
+		if global.level = 4 || global.level = 5 || global.level = 6 || global.level = 7 || global.level = 8{
 			var growhorn = irandom(100);
 			if growhorn <= 25{
 				dino = 2;

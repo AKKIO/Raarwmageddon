@@ -21,8 +21,9 @@ for(var b = 0; b <=14; b++){
 	}
 }
 
-for(var b = 0; b <=14; b++){
-	for(var bb = 0; bb <=5; bb++){
-		instance_create_layer(16+(room_width/3)+(b*16), (bb*16), "ly_barrier", obj_safezonetop);
-	}
-}
+ini_open(working_directory + "/save_files/"+"save.ini");		
+var decode_sd = ini_read_string("rewards", "s_d", "MQ==");
+var decode_kd = ini_read_string("rewards", "k_d", "MQ==");
+global.saved_dinos = real(base64_decode(decode_sd))/pi;
+global.killed_dinos = real(base64_decode(decode_kd))/pi;
+ini_close();

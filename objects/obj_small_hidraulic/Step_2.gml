@@ -17,8 +17,10 @@ if instance_exists(obj_player){
 					part_scr = instance_create_layer(x, obj_player.y-32, "ly_instances", obj_scr_part)
 					part_scr.txt = gv_scr;
 				}
-				global.temp_scr += gv_scr;
-				gv_scr = 0;
+				if instance_exists(int_GUI){
+					global.temp_scr += gv_scr;
+					gv_scr = 0;
+				}
 			
 			}
 		}

@@ -167,11 +167,35 @@
             }
         },
         {
+            "Key": "2728c3ef-e890-478e-bfda-8931cbb8b3b0",
+            "Value": {
+                "id": "2aafa499-f2f2-4fd7-879b-3fd3742e16a3",
+                "resourcePath": "sprites\\spr_superdino_jump\\spr_superdino_jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2872a7e8-fc55-433a-8b02-0a334755b37f",
             "Value": {
                 "id": "98732076-1214-46f0-b718-e276691472a9",
                 "resourcePath": "objects\\obj_platform_sand_t\\obj_platform_sand_t.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "29c49bea-327f-4b72-92b6-2e89babdbedc",
+            "Value": {
+                "id": "c6584873-ef52-4604-86e7-626156c88a25",
+                "resourcePath": "sprites\\spr_dinobone_idle\\spr_dinobone_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29cfe6e4-7476-4df8-9dc2-04858aca73ac",
+            "Value": {
+                "id": "ada16ba5-0bbe-413e-8133-4fe6dba21928",
+                "resourcePath": "views\\29cfe6e4-7476-4df8-9dc2-04858aca73ac.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -228,6 +252,14 @@
                 "id": "448d3ec6-b4cc-4a9d-844c-51815c54453f",
                 "resourcePath": "views\\3739512f-81e6-4a97-af89-4b98bd5a7b6e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "387789ee-7453-4dcc-9908-8b43ef81c43b",
+            "Value": {
+                "id": "a129c431-ed5d-4910-822d-2408e22e5a1c",
+                "resourcePath": "sprites\\spr_dinobone_jump\\spr_dinobone_jump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -663,6 +695,14 @@
             }
         },
         {
+            "Key": "9267d185-031e-4f1d-b0e3-88679d1f1ccf",
+            "Value": {
+                "id": "3122aaa7-925a-4200-8e55-707af2dbc24c",
+                "resourcePath": "sprites\\spr_superdino_roll\\spr_superdino_roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92d5e7a7-51b3-4c03-ab42-a28e1443cd3f",
             "Value": {
                 "id": "fa363ac5-61e9-4eda-b517-3c6191debc68",
@@ -740,6 +780,14 @@
                 "id": "c372ee34-ff9d-4010-85d1-31f74c32689d",
                 "resourcePath": "objects\\obj_smasheffect\\obj_smasheffect.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9e551490-ce15-4d78-93df-8e15642f690c",
+            "Value": {
+                "id": "673dcd0e-07cc-4141-8913-d4982135ea5a",
+                "resourcePath": "sprites\\spr_dinobone_roll\\spr_dinobone_roll.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -863,6 +911,22 @@
             }
         },
         {
+            "Key": "b5c98065-0f1d-492a-886b-485f930e76e3",
+            "Value": {
+                "id": "e549d832-8488-4ecc-8447-7397771ca66d",
+                "resourcePath": "views\\b5c98065-0f1d-492a-886b-485f930e76e3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b5e09652-4063-48db-b6c0-da3c7982d527",
+            "Value": {
+                "id": "bdc15f94-73f4-49ee-b4da-3bd9bde66c91",
+                "resourcePath": "sprites\\spr_superdino_walk\\spr_superdino_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b6e3bb6f-16b0-4952-ae9f-21bbcdaa4267",
             "Value": {
                 "id": "70e6b121-1e27-405d-9bfc-ad86612a9f29",
@@ -955,6 +1019,14 @@
             "Value": {
                 "id": "fdf55a63-c22b-4eb6-a019-85f5151cfe59",
                 "resourcePath": "sprites\\spr_player_walk\\spr_player_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c7d7e98e-495b-46c9-8df8-76abd62e63a9",
+            "Value": {
+                "id": "f0b2e326-a80e-4693-97c8-3a55dc83aa85",
+                "resourcePath": "sprites\\spr_superdino_idle\\spr_superdino_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1108,6 +1180,14 @@
                 "id": "6df451ef-e530-4359-b236-a4972301edbf",
                 "resourcePath": "views\\eaa2bd27-3a06-446a-bf01-5ab579cb4a20.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eaef595e-9d1e-473b-a36d-00778860f82c",
+            "Value": {
+                "id": "2abc5eaa-740d-45d8-b148-7e3e4e562b5c",
+                "resourcePath": "sprites\\spr_dinobone_walk\\spr_dinobone_walk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

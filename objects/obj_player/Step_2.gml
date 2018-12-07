@@ -1,6 +1,6 @@
 /// @description animations
 if state = 0{
-	if hspd > 0.2{
+	if hspd !=0{
 		switch(dino){
 			case(0):
 				sprite_index = spr_player_walk;
@@ -9,18 +9,20 @@ if state = 0{
 			case(1):
 				sprite_index = spr_dinocorn_walk;
 			break;
+			
+			case(2):
+				sprite_index = spr_dinobone_walk;
+			break;
+			
+			case(3):
+				sprite_index = spr_superdino_walk;
+			break;
 		}
+	}
+	
+	if hspd > 0.2{
 		image_xscale = 1;
 	}else if hspd < -0.2{
-		switch(dino){
-			case(0):
-				sprite_index = spr_player_walk;
-			break;
-			
-			case(1):
-				sprite_index = spr_dinocorn_walk;
-			break;
-		}
 		image_xscale = -1;	
 	}else{
 		switch(dino){
@@ -30,6 +32,14 @@ if state = 0{
 			
 			case(1):
 				sprite_index = spr_dinocorn_idle;
+			break;
+			
+			case(2):
+				sprite_index = spr_dinobone_idle;
+			break;
+			
+			case(3):
+				sprite_index = spr_superdino_idle;
 			break;
 		}
 	}
@@ -43,6 +53,14 @@ if place_free(x, y+1){
 			
 			case(1):
 				sprite_index = spr_dinocorn_jump;
+			break;
+			
+			case(2):
+				sprite_index = spr_dinobone_jump;
+			break;
+			
+			case(3):
+				sprite_index = spr_superdino_jump;
 			break;
 		}
 	if image_index = 3{
@@ -60,11 +78,25 @@ if state = 3{
 			case(1):
 				sprite_index = spr_dinocorn_jump;
 			break;
+			
+			case(2):
+				sprite_index = spr_dinobone_jump;
+			break;
+			
+			case(3):
+				sprite_index = spr_superdino_jump;
+			break;
 		}
 }
 
 //lenght dir the smash
-var bbox = 6, boxl = 16, rheigh = 128;
+if instance_exists(int_chars){
+	var fixrheigh = 256;
+}else{
+	var fixrheigh = 128;
+}
+
+var bbox = 6, boxl = 16, rheigh = fixrheigh;
 for(var i = 0; i < rheigh; i++){
 	ly[0] = y+lengthdir_y(i, -90);
 	if (collision_point(x-bbox, ly[0]+boxl, obj_solid, false, true) || 
@@ -73,7 +105,8 @@ for(var i = 0; i < rheigh; i++){
 	collision_point(x-bbox, ly[0]+boxl, obj_platform, false, true) ||
 	collision_point(x-bbox, ly[0]+boxl, obj_platform_brick, false, true) ||
 	collision_point(x-bbox, ly[0]+boxl, obj_platform_sand, false, true) ||
-	collision_point(x-bbox, ly[0]+boxl, obj_small_xhidraulic, false, true)) {
+	collision_point(x-bbox, ly[0]+boxl, obj_small_xhidraulic, false, true)||
+	collision_point(x-bbox, ly[0]+boxl, obj_char_hidraulic, false, true)) {
 		break;
 	}
 }
@@ -85,7 +118,8 @@ for(var e = 0; e < rheigh; e++){
 	collision_point(x, ly[1]+boxl, obj_platform, false, true) ||
 	collision_point(x, ly[1]+boxl, obj_platform_brick, false, true)||
 	collision_point(x, ly[1]+boxl, obj_platform_sand, false, true)||
-	collision_point(x, ly[1]+boxl, obj_small_xhidraulic, false, true)){
+	collision_point(x, ly[1]+boxl, obj_small_xhidraulic, false, true)||
+	collision_point(x, ly[1]+boxl, obj_char_hidraulic, false, true)){
 		break;
 	}
 }
@@ -97,7 +131,8 @@ for(var o = 0; o < rheigh; o++){
 	collision_point(x+bbox-1, ly[2]+boxl, obj_platform, false, true) ||
 	collision_point(x+bbox-1, ly[2]+boxl, obj_platform_brick, false, true)||
 	collision_point(x+bbox-1, ly[2]+boxl, obj_platform_sand, false, true)||
-	collision_point(x+bbox-1, ly[2]+boxl, obj_small_xhidraulic, false, true)){
+	collision_point(x+bbox-1, ly[2]+boxl, obj_small_xhidraulic, false, true)||
+	collision_point(x+bbox-1, ly[2]+boxl, obj_char_hidraulic, false, true)){
 		break;
 	}
 }

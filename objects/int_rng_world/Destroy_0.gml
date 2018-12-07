@@ -50,6 +50,9 @@ if instance_exists(obj_big_hidraulic){
 if instance_exists(obj_detail){
 	instance_destroy(obj_detail);
 }
+if instance_exists(obj_safezonetop){
+	instance_destroy(obj_safezonetop);
+}
 
 part_particles_clear(global.part[0]);
 

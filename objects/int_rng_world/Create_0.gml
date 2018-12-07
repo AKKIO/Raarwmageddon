@@ -110,3 +110,8 @@ for (var yy = 2; yy <= 30; yy ++){
 	}
 	
 }
+for(var b = 0; b <=14; b++){
+	for(var bb = 0; bb <=5; bb++){
+		instance_create_layer(16+(room_width/3)+(b*16), (bb*16), "ly_barrier", obj_safezonetop);
+	}
+}

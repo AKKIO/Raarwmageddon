@@ -21,6 +21,14 @@ if state = 1{
 			case(1):
 				draw_sprite_ext(spr_dinocorn_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
 			break;
+			
+			case(2):
+				draw_sprite_ext(spr_dinobone_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
+			break;
+			
+			case(3):
+				draw_sprite_ext(spr_superdino_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
+			break;
 		}
 	if hspd < 0{
 		roll+=9;

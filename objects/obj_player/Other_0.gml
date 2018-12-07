@@ -1,5 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
+if room = rm_work{
 x = room_width/2;
 y = room_height-48;
 
@@ -34,6 +35,7 @@ if hugging = 1{
 			ini_write_string("DINOS", "dino01", din_crypt[1]);
 			ini_close();
 		}
+		global.saved_dinos++;
 		global.dinos +=1;
 		instance_destroy(obj_dino);
 		hugging = 0;
@@ -48,4 +50,18 @@ if instance_exists(int_GUI){
 	global.temp_scr = 0;
 	global.mult_scr = 0;
 	int_GUI.show_scr = 0;
+}
+}else{
+	room_goto(rm_work);
+}
+
+if instance_exists(GOD){
+ini_open(working_directory + "/save_files/"+"save.ini");	
+var gsdinos = global.saved_dinos*pi;
+var gkdinos = global.killed_dinos*pi;
+var code_sd = base64_encode(string(gsdinos));
+var code_kd = base64_encode(string(gkdinos    ));
+ini_write_string("rewards", "s_d", code_sd); 
+ini_write_string("rewards", "k_d", code_kd); 
+ini_close(); 
 }

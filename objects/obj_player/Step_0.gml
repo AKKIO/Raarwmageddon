@@ -184,3 +184,9 @@ if place_meeting(x, y+2, obj_small_hidraulic) && state = 3{
 if place_meeting(x, y+2, obj_big_hidraulic) && state = 3{
 		bkcp_j = 3;
 }
+if place_meeting(x, y+2, obj_small_xhidraulic) && state = 3{
+		bkcp_j = 2;
+}
+if place_meeting(x, y+2, obj_char_hidraulic) && state = 3{
+		bkcp_j = 2;
+}

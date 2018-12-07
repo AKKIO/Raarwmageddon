@@ -4,5 +4,6 @@ instance_destroy();
 if state > 0{
 	if instance_exists(obj_player){
 		obj_player.hugging = 0;
+		global.killed_dinos++;
 	}
 }
