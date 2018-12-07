@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "94cd2dfa-2ee8-4345-b8ae-c2bb19fc4cfb",
+            "Value": {
+                "id": "41e2480a-a34e-409c-922b-40d46b91caf5",
+                "resourcePath": "objects\\obj_asmash\\obj_asmash.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "96425eb3-9600-46eb-8e2c-f6c33279d2e4",
             "Value": {
                 "id": "0ecd879c-9066-4ce6-8b46-77a443d53e64",

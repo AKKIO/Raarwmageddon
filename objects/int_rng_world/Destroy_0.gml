@@ -1,5 +1,8 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
+if instance_exists(int_surfacesColor){
+	int_surfacesColor.alarm[0] = 1;
+}
 
 if instance_exists(obj_platform){
 	obj_platform.xplo = 0;	
@@ -18,7 +21,7 @@ if instance_exists(obj_big_hidraulic){
 	obj_big_hidraulic.xplo = 0;
 }
 if instance_exists(obj_solid){
-	obj_solid.alarm[0] = 1;
+	obj_solid.alarm[0] = 2;
 }
 if instance_exists(obj_shit){
 	instance_destroy(obj_shit);

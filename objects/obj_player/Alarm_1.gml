@@ -1,6 +1,6 @@
 /// @description alarm for smash
 if smash_allow = 1 && state = 2{
-	if place_free(x, ly_min){
+	if place_free(x, ly_min-8){
 		y = ly_min;
 		instance_create_layer(x, y, "ly_platforms", obj_smasheffect)
 		if instance_exists(int_camera){

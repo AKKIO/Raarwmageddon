@@ -8,12 +8,14 @@
 if instance_exists(int_surfacesColor){
 	if int_surfacesColor.style = 1{
 		col = global.second_detail_color
+		logcol = col;
 	}else{
 		col = global.color_now;
+		logcol = c_white;
 	}
 }
 
-draw_sprite_ext(spr_LOGO, 0, ideal_width/2, (ideal_height/3), 1, 1, 0, col, 1)
+draw_sprite_ext(spr_LOGO, 0, ideal_width/2, (ideal_height/3), 1, 1, 0, logcol, 1)
 if show <=60{
 	draw_set_font(font_00);
 	draw_set_halign(fa_middle)

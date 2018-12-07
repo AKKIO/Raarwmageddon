@@ -95,9 +95,10 @@ if instance_exists(int_chars){
 }else{
 	var fixrheigh = 128;
 }
+obj = obj_asmash;
 
 var bbox = 6, boxl = 16, rheigh = fixrheigh;
-for(var i = 0; i < rheigh; i++){
+/*for(var i = 0; i < rheigh; i++){
 	ly[0] = y+lengthdir_y(i, -90);
 	if (collision_point(x-bbox, ly[0]+boxl, obj_solid, false, true) || 
 	collision_point(x-bbox, ly[0]+boxl, obj_small_hidraulic, false, true) ||
@@ -135,7 +136,41 @@ for(var o = 0; o < rheigh; o++){
 	collision_point(x+bbox-1, ly[2]+boxl, obj_char_hidraulic, false, true)){
 		break;
 	}
+}*/
+
+/*for(var i = 0; i < rheigh; i++){
+	ly[0] = y+lengthdir_y(i, -90);
+	if (collision_point(x-bbox, ly[0]+boxl, obj, false, true)) {
+		break;
+	}
 }
+for(var e = 0; e < rheigh; e++){
+	ly[1] = y+lengthdir_y(e, -90);
+	if (collision_point(x, ly[1]+boxl, obj, false, true)){
+		break;
+	}
+}
+for(var o = 0; o < rheigh; o++){
+	ly[2] = y+lengthdir_y(o, -90);
+	if (collision_point(x+bbox-1, ly[2]+boxl, obj, false, true)){
+		break;
+	}
+}*/
+for(var i = 0; i < rheigh; i++){
+	ly[0] = y+lengthdir_y(i, -90);
+	if (collision_point(x-bbox, ly[0]+boxl, obj, false, true)) {
+		break;
+	}
+	ly[1] = y+lengthdir_y(i, -90);
+	if (collision_point(x, ly[1]+boxl, obj, false, true)){
+		break;
+	}
+	ly[2] = y+lengthdir_y(i, -90);
+	if (collision_point(x+bbox-1, ly[2]+boxl, obj, false, true)){
+		break;
+	}
+}
+
 
 
 ly_min = min(ly[0], ly[1], ly[2]);

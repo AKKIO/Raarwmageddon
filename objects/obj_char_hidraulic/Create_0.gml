@@ -5,7 +5,7 @@ tile = 0;
 sprite_index = -1;
 alarm[0] = 2;
 dino = 0;
-
+blend = c_white;
 i = irandom(10);
 
 din[1] = spr_player_idle;

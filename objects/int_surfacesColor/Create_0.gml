@@ -38,3 +38,4 @@ difficulty = 0;
 global.dif = 0;
 
 
+alarm[0] = 1;
