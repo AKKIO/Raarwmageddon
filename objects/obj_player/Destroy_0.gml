@@ -3,9 +3,17 @@
 instance_create_layer(x, y, "ly_platforms", obj_impact);
 instance_create_layer(x, y, "ly_platforms", obj_soul);
 
-ini_open(working_directory + "/save_files/"+"save.ini");		
-var code_sd = base64_encode(string(global.saved_dinos*pi));
-var code_kd = base64_encode(string(global.killed_dinos*pi));
-ini_write_string("rewards", "s_d", code_sd); 
-ini_write_string("rewards", "k_d", code_kd); 
-ini_close();
+if instance_exists(int_GUI) && instance_exists(GOD){
+	if global.dinos >= 10{
+		ini_open(working_directory + "/save_files/"+"save.ini");
+		din_crypt[3] = base64_encode(string("499"))
+		ini_write_string("DINOS", "dino03", din_crypt[3]);
+		ini_close();
+	}
+	if global.killed_dinos>= 10{
+		ini_open(working_directory + "/save_files/"+"save.ini");
+		din_crypt[2] = base64_encode(string("499"))
+		ini_write_string("DINOS", "dino02", din_crypt[2]);
+		ini_close();
+	}
+}

@@ -2,6 +2,7 @@
 // Puede escribir su código en este editor
 global.level = 0;
 global.dinos = 0;
+global.killed_dinos = 0;
 global.scr = 0;
 global.mult_scr = 0;
 global.temp_scr = 0;

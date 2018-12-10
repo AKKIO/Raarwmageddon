@@ -4,4 +4,9 @@ if dino > 0 && global.dins[dino] = 499{
 	i+=.25;
 	draw_sprite_ext(din[dino], i, x, y-24, 1, 1, 0, blend, 1);
 }
-draw_sprite_ext(spr_char_hidraulic, tile, x, y, image_xscale, 1, 0, image_blend, 1);
+
+if global.dins[dino] = 0{
+	draw_sprite_ext(spr_char_hidraulic_out, tile, x, y, image_xscale, 1, 0, image_blend, 1);
+}else{
+	draw_sprite_ext(spr_char_hidraulic, tile, x, y, image_xscale, 1, 0, image_blend, 1);
+}

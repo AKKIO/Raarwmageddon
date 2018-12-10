@@ -2,6 +2,7 @@
 
 //vars
 global.details = 6;
+global.demo = 0; 
 
 //create instances and objects
 instance_create_layer(room_width/2, (room_height)-(48), "ly_objects", obj_player)//player
@@ -20,10 +21,3 @@ for(var b = 0; b <=14; b++){
 		instance_create_layer(16+(room_width/3)+(b*16), (room_height-20)-(bb*16), "ly_barrier", obj_barrier);
 	}
 }
-
-ini_open(working_directory + "/save_files/"+"save.ini");		
-var decode_sd = ini_read_string("rewards", "s_d", "MQ==");
-var decode_kd = ini_read_string("rewards", "k_d", "MQ==");
-global.saved_dinos = real(base64_decode(decode_sd))/pi;
-global.killed_dinos = real(base64_decode(decode_kd))/pi;
-ini_close();

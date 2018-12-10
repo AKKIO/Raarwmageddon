@@ -27,7 +27,7 @@ for (var topl = 0; topl <= 14; topl++){
 	instance_create_layer((16+(room_width/3))+(topl*16), y+48, "ly_platforms", obj_platform_brick);
 }
 
-for (var yy = 2; yy <= 30; yy ++){
+for (var yy = 2; yy <= 31; yy ++){
 	var XX = 48+(room_width/3)+(irandom(10))*16;
 	platform = irandom(2);
 	platform_t = irandom(1);

@@ -42,3 +42,26 @@ uPixelH = shader_get_uniform(sh_outline, "pixelH");
 uPixelW = shader_get_uniform(sh_outline, "pixelW");
 texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
+
+///DINOS
+//idle
+spridle[0] = spr_player_idle;
+spridle[1] = spr_dinocorn_idle;
+spridle[2] = spr_dinobone_idle;
+spridle[3] = spr_superdino_idle;
+//walk
+sprwalk[0] = spr_player_walk;
+sprwalk[1] = spr_dinocorn_walk;
+sprwalk[2] = spr_dinobone_walk;
+sprwalk[3] = spr_superdino_walk;
+//jump
+sprjump[0] = spr_player_jump;
+sprjump[1] = spr_dinocorn_jump;
+sprjump[2] = spr_dinobone_jump;
+sprjump[3] = spr_superdino_jump;
+//roll
+sprroll[0] = spr_player_roll;
+sprroll[1] = spr_dinocorn_roll;
+sprroll[2] = spr_dinobone_roll;
+sprroll[3] = spr_superdino_roll;
+alarm[4] = 2;

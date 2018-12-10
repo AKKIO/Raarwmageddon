@@ -13,23 +13,7 @@ if state = 2 && place_free(x, ly_min){
 }
 
 if state = 1{
-	switch(dino){
-			case(0):
-				draw_sprite_ext(spr_player_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
-			break;
-			
-			case(1):
-				draw_sprite_ext(spr_dinocorn_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
-			break;
-			
-			case(2):
-				draw_sprite_ext(spr_dinobone_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
-			break;
-			
-			case(3):
-				draw_sprite_ext(spr_superdino_roll, 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
-			break;
-		}
+	draw_sprite_ext(sprroll[dino], 1, x, y+8, image_xscale, 1, roll, image_blend, 1);
 	if hspd < 0{
 		roll+=9;
 	}else if hspd > 0{

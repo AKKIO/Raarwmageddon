@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0e0b3b73-b073-43d9-b562-abf0c70f6cd8",
+            "Value": {
+                "id": "c7028aac-2fcf-4fc0-82b0-eb72d89848de",
+                "resourcePath": "rooms\\rm_select_char\\rm_select_char.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1067a8e0-1f83-44af-becc-7409754a484c",
             "Value": {
                 "id": "13f2a1fd-efde-4ab0-9bb5-4f1572e9ebc4",
@@ -674,7 +682,7 @@
             "Key": "8f132e0f-a2cc-4e14-bac5-33edb4d824e7",
             "Value": {
                 "id": "b55d00d3-476b-4905-bb7d-0aa7d1a860db",
-                "resourcePath": "rooms\\rm_select_char\\rm_select_char.yy",
+                "resourcePath": "rooms\\rm_select_char1\\rm_select_char1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -871,6 +879,14 @@
             }
         },
         {
+            "Key": "a9feb5e8-20df-42e7-99cc-6438d08f2ce3",
+            "Value": {
+                "id": "9e2182a9-06df-4157-99cf-c93e4a0b1942",
+                "resourcePath": "sprites\\spr_char_hidraulic_des\\spr_char_hidraulic_des.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "aa7e96d4-8139-49a6-8021-e9f67712d8ad",
             "Value": {
                 "id": "94260f52-6f0e-4e5a-adf9-fa91cee08cba",
@@ -916,6 +932,14 @@
                 "id": "029175e2-d19d-42e9-9e7a-841df0f0a606",
                 "resourcePath": "objects\\obj_platform\\obj_platform.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b550f9c4-89ae-4300-8a03-f2c0a75b048d",
+            "Value": {
+                "id": "2c1bdd57-34d4-4571-bf43-ab3fb6e46474",
+                "resourcePath": "rooms\\rm_select_char_DEMO\\rm_select_char_DEMO.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1023,6 +1047,14 @@
             }
         },
         {
+            "Key": "c6a963d8-f7be-4b13-9c2f-8ee36c72a2d9",
+            "Value": {
+                "id": "0ee92794-156d-40ab-94f6-8dd38e841db5",
+                "resourcePath": "sprites\\spr_char_hidraulic_out\\spr_char_hidraulic_out.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c74da3ae-f6da-436d-8849-89377cd01fbe",
             "Value": {
                 "id": "fdf55a63-c22b-4eb6-a019-85f5151cfe59",
@@ -1052,6 +1084,14 @@
                 "id": "ac7491b3-46ae-47e5-9c0a-96943e85f0d0",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cceba514-60c7-4930-9aaf-9500caf7ee6d",
+            "Value": {
+                "id": "9aa576ce-b0be-47a2-b590-9e799f95e8e2",
+                "resourcePath": "objects\\obj_char_hidraulic_des\\obj_char_hidraulic_des.yy",
+                "resourceType": "GMObject"
             }
         },
         {
