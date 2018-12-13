@@ -9,10 +9,11 @@ if (instance_exists(obj_player)){
 
 if instance_exists(obj_player){
 	if y > obj_player.y{
-		if distance_to_object(obj_player) < 12{
+		if distance_to_object(obj_player) < 2{
 			if obj_player.state = 3{
 				spd = 0.25;
 				tile = 1;
+				//obj_player.state = 0;
 				if gv_scr != 0 && instance_exists(obj_player){
 					part_scr = instance_create_layer(x, obj_player.y-32, "ly_instances", obj_scr_part)
 					part_scr.txt = gv_scr;

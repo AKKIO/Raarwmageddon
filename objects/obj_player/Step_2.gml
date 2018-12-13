@@ -16,7 +16,8 @@ if state = 0{
 if place_free(x, y+1){
 	sprite_index = sprjump[dino];
 	if image_index >= 2{
-		image_speed = 0;	
+		image_speed = 0;
+		image_index = 0;
 	}
 }else{
 	image_speed = 1.25;	
