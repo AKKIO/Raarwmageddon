@@ -106,5 +106,9 @@ for (var yy = 1; yy <= 30; yy ++){
 		break;
 	
 	}
-	
 }
+
+///menu s
+chapter = 0;
+select = 0;
+scroll = 0;
