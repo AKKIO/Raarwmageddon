@@ -22,3 +22,9 @@ ini_open(working_directory + "/save_files/"+"save.ini");
 		ini_write_string("Score", "highscore", "MAo=");
 	}
 ini_close();
+
+ini_open(working_directory + "/save_files/"+"save.ini");
+	if !ini_key_exists("options", "tutorial"){
+		ini_write_string("options", "tutorial", 0);
+	}
+ini_close();

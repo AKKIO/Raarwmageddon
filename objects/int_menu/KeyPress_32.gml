@@ -3,7 +3,11 @@
 
 switch(chapter){
 	case(0):
+		if tutorial = 0{
+			room_goto(rm_tutorial);
+		}else{
 		chapter = 1;
+		}
 	break;
 	
 	case(1):

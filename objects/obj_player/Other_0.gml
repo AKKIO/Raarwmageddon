@@ -53,7 +53,7 @@ if instance_exists(int_GUI){
 	global.mult_scr = 0;
 	int_GUI.show_scr = 0;
 }
-}else{
+}else if room = rm_select_char{
 	room_goto(rm_work);
 }
 if instance_exists(int_GUI) && instance_exists(GOD){
@@ -69,5 +69,11 @@ if instance_exists(int_GUI) && instance_exists(GOD){
 		ini_write_string("DINOS", "dino02", din_crypt[2]);
 		ini_close();
 	}
+}else{
+	room_goto(rm_work);
+	ini_open(working_directory + "/save_files/"+"save.ini");
+	ini_write_string("options", "tutorial", 1);
+	ini_close();
+	
 }
 alarm[4] = 2;

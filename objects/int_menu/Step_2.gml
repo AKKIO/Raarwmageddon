@@ -24,3 +24,6 @@ if key_down && scroll = 0{
 if keyboard_check_released(ord("W")) || keyboard_check_released(vk_up) || keyboard_check_released(ord("WS")) || keyboard_check_released(vk_down){
 	scroll = 0;
 }
+ini_open(working_directory + "/save_files/"+"save.ini");
+	tutorial = ini_read_real("options", "tutorial", "0");
+ini_close();
