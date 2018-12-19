@@ -1,7 +1,7 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 ini_open(working_directory + "/save_files/"+"save.ini");
-var style_decrypt = (ini_read_string("options", "style", "0"));
+var style_decrypt = (ini_read_string("options", "style", "MQ=="));
 ini_close();
 style = real(base64_decode(style_decrypt));
 

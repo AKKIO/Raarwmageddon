@@ -82,8 +82,87 @@ if !instance_exists(obj_player){
 		ini_write_string("Score", "highscore", scr_crypt);
 	}
 	ini_close();
+	if image <= 6{
+		image+=.35;
+	}
 	
 	
+	if instance_exists(int_surfacesColor){
+		if int_surfacesColor.style = 1{
+			var col = global.second_detail_color;
+			var col2 = global.color_now;
+		}else{
+			var col = c_white;
+			var col2 = global.color_now;
+		}
+		col3 = c_black;
+	}
+	
+	draw_sprite_ext(spr_square, image, ideal_width/2, ideal_height/2, 1.6, 1.6, 0, col, 1);
+	
+	if image >= 6{
+		var xx = ideal_width-ideal_width, yy = ideal_height-ideal_height;
+		scr_draw_text_outline(ideal_width/2, yy+32, "STATS", 1.6, 2, 0, col2, col3, 1);
+		ini_open(working_directory + "/save_files/"+"save.ini");
+			var scr_stat = real(base64_decode(scr_decrypt));
+			var scr_st = (scr_stat/7)/256;
+		ini_close();
+		
+		if scr_st <= global.scr{
+			scr_draw_text_outline(ideal_width/2, yy+80, "Highscore", 1, 1, 0, col2, col3, 1);
+			scr_draw_text_outline(ideal_width/2, yy+104, scr_st, .75, .75, 0, col3, col2, 1);
+			
+			scr_draw_text_outline(ideal_width/2, yy+128, "New Highscore", 1, 1, 0, col2, col3, 1);
+			scr_draw_text_outline(ideal_width/2, yy+152, global.scr, .75, .75, 0, col3, col2, 1);
+		}else{
+			scr_draw_text_outline(ideal_width/2, yy+80, "Highscore", 1, 1, 0, col2, col3, 1);
+			scr_draw_text_outline(ideal_width/2, yy+104, scr_st, .75, .75, 0, col3, col2, 1);
+			
+			scr_draw_text_outline(ideal_width/2, yy+128, "Score", 1, 1, 0, col2, col3, 1);
+			scr_draw_text_outline(ideal_width/2, yy+152, global.scr, .75, .75, 0, col3, col2, 1);
+		}
+		scr_draw_text_outline(ideal_width/2, yy+176, "Saved Dinos", 1, 1, 0, col2, col3, 1);
+		scr_draw_text_outline(ideal_width/2, yy+200, global.dinos, .75, .75, 0, col3, col2, 1);
+		
+		scr_draw_text_outline(ideal_width/2, yy+224, "Level", 1, 1, 0, col2, col3, 1);
+		scr_draw_text_outline(ideal_width/2, yy+248, global.level, .75, .75, 0, col3, col2, 1);
+		
+		scr_draw_text_outline(ideal_width/2, yy+276, "Timer", 1, 1, 0, col2, col3, 1);
+		var yy_pos = yy+300, size_l = 1;
+		
+		if minute < 10{
+			if second < 10{
+					if ms < 10{
+						scr_draw_text_outline(ideal_width/2, yy_pos, "0"+string(minute)+":"+"0"+string(second)+":"+"0"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}else{
+						scr_draw_text_outline(ideal_width/2, yy_pos, "0"+string(minute)+":"+"0"+string(second)+":"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}
+				}else{
+					if ms < 10{
+						scr_draw_text_outline(ideal_width/2, yy_pos, "0"+string(minute)+":"+string(second)+":"+"0"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}else{
+						scr_draw_text_outline(ideal_width/2, yy_pos, "0"+string(minute)+":"+string(second)+":"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}
+				}
+			}else{
+				if second < 10{
+					if ms < 10{
+						scr_draw_text_outline(ideal_width/2, yy_pos, string(minute)+":"+"0"+string(second)+":"+"0"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}else{
+						scr_draw_text_outline(ideal_width/2, yy_pos, string(minute)+":"+"0"+string(second)+":"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}
+				}else{
+					if ms < 10{
+						scr_draw_text_outline(ideal_width/2, yy_pos, string(minute)+":"+string(second)+":"+"0"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}else{
+						scr_draw_text_outline(ideal_width/2, yy_pos, string(minute)+":"+string(second)+":"+string(ms), size_l, size_l, 0, col2, col3, 1);
+					}
+				}
+	
+			}
+
+		
+	}
 	
 }
 

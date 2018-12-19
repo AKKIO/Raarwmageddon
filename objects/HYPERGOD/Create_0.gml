@@ -13,7 +13,7 @@ if !ini_section_exists("rewards"){
 	ini_write_string("rewards", "s_d", crypt);
 	ini_write_string("rewards", "k_d", crypt);
 }
-var st_decrypt = ini_read_string("options", "style", 0);
+var st_decrypt = ini_read_string("options", "style", 1);
 st = real(base64_decode(st_decrypt));
 ini_close();
 

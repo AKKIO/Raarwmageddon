@@ -13,6 +13,7 @@ step = 0;
 ms = 0;
 second = 0
 minute = 0;
+image = 0;
 
 
 ideal_width = 0; //336;
