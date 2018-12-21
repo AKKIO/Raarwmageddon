@@ -21,6 +21,7 @@ if instance_exists(int_surfacesColor){
 }
 sz1 = 1
 sz2 = 0.5
+
 draw_sprite_ext(spr_LOGO, 0, ideal_width/2, (ideal_height/3), 1, 1, 0, logcol, 1)
 switch(chapter){
 	case(0):
@@ -40,7 +41,7 @@ switch(chapter){
 		}
 	break;
 	
-	case(1):
+	case(1)://menu 1
 	switch(select){
 		case(0):
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "New run", sz1, sz2, 0, col2, col, 1);
@@ -60,5 +61,59 @@ switch(chapter){
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Tutorial", sz1, sz2, 0, col2, col, 1);
 		break;
 	}
+	break;
+	
+	case(2)://options
+		switch(select){
+			case(0):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Audio", sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Video", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Back", sz1, sz2, 0, col, c_black, 1);
+			break;
+			
+			case(1):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Audio", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Video", sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Back", sz1, sz2, 0, col, c_black, 1);
+			break;
+			
+			case(2):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Audio", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Video", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Back", sz1, sz2, 0, col2, col, 1);
+			break;
+		}
+	break;
+	
+	case(4)://Video;
+		switch(select){
+			case(0):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col, c_black, 1);
+			break;
+			
+			case(1):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col, c_black, 1);
+			break;
+			
+			case(2):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col, c_black, 1);
+			break;
+			
+			case(3):
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col2, col, 1);
+			break;
+		}
 	break;
 }

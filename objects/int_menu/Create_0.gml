@@ -112,3 +112,12 @@ for (var yy = 1; yy <= 30; yy ++){
 chapter = 0;
 select = 0;
 scroll = 0;
+
+//ini
+ini_open(working_directory + "/save_files/"+"save.ini");
+	var st_decrypt = ini_read_string("options", "style", 1);
+	st = real(base64_decode(st_decrypt));
+ini_close();
+style_read = st;
+style_r[0] = "Retro.";
+style_r[1] = "Normal."

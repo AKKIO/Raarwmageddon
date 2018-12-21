@@ -11,6 +11,7 @@ if instance_exists(int_surfacesColor){
 		shader_set_uniform_f(colorG, 0);
 		shader_set_uniform_f(colorB, 0);
 	}else{
+		image_blend = -1;
 		shader_set_uniform_f(colorR, color_get_red(global.color_now)/140);
 		shader_set_uniform_f(colorG, color_get_green(global.color_now)/140);
 		shader_set_uniform_f(colorB, color_get_blue(global.color_now)/140);

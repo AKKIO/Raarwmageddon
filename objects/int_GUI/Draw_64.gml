@@ -83,7 +83,7 @@ if !instance_exists(obj_player){
 	}
 	ini_close();
 	if image <= 6{
-		image+=.35;
+		image+=.25;
 	}
 	
 	

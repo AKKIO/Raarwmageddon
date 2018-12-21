@@ -74,6 +74,10 @@ if instance_exists(int_GUI){
 	
 }
 
+if reset_style = 1{
+	alarm[1] = 2;
+	reset_style = 0;
+}
 
 global.color_now = color[col_s];
 global.second_detail_color = color[col_s+1];

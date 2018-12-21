@@ -39,3 +39,5 @@ global.dif = 0;
 
 
 alarm[0] = 1;
+
+reset_style = 0;

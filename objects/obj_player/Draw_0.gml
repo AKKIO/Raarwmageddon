@@ -9,7 +9,7 @@ if state != 1{
 }
 if state = 2 && place_free(x, ly_min){
 	
-	draw_sprite_ext(spr_smash_trail, image_index, x, mean(ly_min, y)+16, dir_n, point_distance(x, y, x, ly_min)/sprite_scale, 0, image_blend, 1);
+	draw_sprite_ext(sprjump[dino], 0, x, mean(ly_min, y)-16, dir_n, point_distance(x, y, x, ly_min)/sprite_scale, 0, image_blend, 1);
 }
 
 if state = 1{
