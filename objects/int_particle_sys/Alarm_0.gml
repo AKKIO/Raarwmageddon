@@ -1,8 +1,8 @@
-/// @description start vars
-//create particle systems
+/// @description Inserte aquí la descripción
+// Puede escribir su código en este editor
 ini_open(working_directory + "/save_files/"+"save.ini");
 global.allow_p = ini_read_real("options", "particles", 1);
-ini_close()
+ini_close();
 if global.allow_p = 1{
 global.partsys[0] = part_system_create();
 

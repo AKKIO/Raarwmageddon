@@ -89,29 +89,29 @@ switch(chapter){
 		switch(select){
 			case(0):
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col2, col, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col, c_black, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles "+string(txtp), sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake "+string(txtC), sz1, sz2, 0, col, c_black, 1);
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col, c_black, 1);
 			break;
 			
 			case(1):
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col, c_black, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col2, col, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles "+string(txtp), sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake "+string(txtC), sz1, sz2, 0, col, c_black, 1);
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col, c_black, 1);
 			break;
 			
 			case(2):
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col, c_black, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col, c_black, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col2, col, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles "+string(txtp), sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake "+string(txtC), sz1, sz2, 0, col2, col, 1);
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col, c_black, 1);
 			break;
 			
 			case(3):
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Style "+string(style_r[style_read]), sz1, sz2, 0, col, c_black, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles ON", sz1, sz2, 0, col, c_black, 1);
-				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake ON", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Particles "+string(txtp), sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Screenshake "+string(txtC), sz1, sz2, 0, col, c_black, 1);
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col2, col, 1);
 			break;
 		}

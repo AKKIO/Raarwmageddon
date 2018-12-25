@@ -8,6 +8,12 @@ ini_open(working_directory + "/save_files/"+"save.ini");
 if !ini_section_exists("options"){
 	ini_write_string("options", "style", "MQ==");
 }
+if !ini_key_exists("options", "scrshk"){
+	ini_write_real("options", "scrshk", 1);
+}
+if !ini_key_exists("options", "particles"){
+	ini_write_real("options", "particles", 1);
+}
 if !ini_section_exists("rewards"){
 	var crypt = base64_encode(string(pi));
 	ini_write_string("rewards", "s_d", crypt);

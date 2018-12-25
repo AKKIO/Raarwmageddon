@@ -26,6 +26,9 @@ randomize();
 
 instance_create_layer(x, y, "ly_instances", int_particle_sys);
 instance_create_layer(x, y, "ly_instances", int_cloud_rng);
+instance_create_layer(room_width/2, room_height-96, "ly_instances", obj_follower);
+instance_create_layer(room_width/2, room_height/2, "ly_instances", int_camera);
+
 color = instance_create_layer(x, y, "ly_instances", int_surfacesColor);
 logcol = c_white;
 //color.col_s = irandom(10);
@@ -117,6 +120,20 @@ scroll = 0;
 ini_open(working_directory + "/save_files/"+"save.ini");
 	var st_decrypt = ini_read_string("options", "style", 1);
 	st = real(base64_decode(st_decrypt));
+	var a = ini_read_real("options", "particles", 1);
+	var c = ini_read_real("options", "scrshk", 1);
+	global.allow_p = a;
+	if a = 0{
+		txtp = "OFF"
+	}else{
+		txtp = "ON"
+	}
+	
+	if c = 0{
+		txtC = "OFF"
+	}else{
+		txtC = "ON"
+	}
 ini_close();
 style_read = st;
 style_r[0] = "Retro.";

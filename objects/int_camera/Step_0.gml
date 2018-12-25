@@ -11,6 +11,8 @@ if instance_exists(obj_follower){
 	y+= (((obj_follower.y-y)-(80))/10)+YY
 }
 
+
+if allow_C = 1{
 if dur > 0{
 	dur--
 	XX = irandom_range(-force, force)
@@ -23,4 +25,5 @@ if dur > 0{
 if scr = 1{
 	scr = 0;
 	dur = 5;
+}
 }
