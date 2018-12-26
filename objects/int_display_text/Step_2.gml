@@ -1,5 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
+if dino = 0{
 if keyboard_check_pressed(vk_space){
 	switch(str){
 		case(1): str = 2 break;
@@ -41,8 +42,15 @@ if mover = 1 && movel = 1 && str = 0{
 	str = 1;
 }
 
-if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X")) && str = 5{
+if keyboard_check_pressed(vk_shift) && str = 5 || keyboard_check_pressed(ord("X")) && str = 5{
 	str = 6;
-	alarm[1] = room_speed*2;
+	alarm[1] = room_speed*3;
 	
+}
+}else{
+	if instance_exists(obj_dino){
+		if obj_dino.state = 1{
+			str = 9;
+		}
+	}
 }
