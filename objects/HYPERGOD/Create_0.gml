@@ -34,3 +34,6 @@ ini_open(working_directory + "/save_files/"+"save.ini");
 		ini_write_string("options", "tutorial", 0);
 	}
 ini_close();
+
+audio_group_load(grp_FX);
+audio_group_load(grp_MUSIC);

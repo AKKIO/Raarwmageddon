@@ -14,6 +14,7 @@ hspd	= 0;
 move	= 0;
 jspd	= 7;
 roll	= 0;
+walk	= 0;
 
 hugging = 0;
 

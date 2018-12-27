@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "717e3ab3-58fd-40c8-8ef3-a58d2ed6ef94",
+            "Value": {
+                "id": "e77a4304-5637-4ed6-bcc4-d8b5f7c520d9",
+                "resourcePath": "sounds\\snd_smash\\snd_smash.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "27018ba7-745a-45c7-bed1-b1c83202e468",
@@ -991,6 +999,14 @@
             }
         },
         {
+            "Key": "b709c602-1124-4016-aacb-ca34e8985a21",
+            "Value": {
+                "id": "618624b1-d397-4746-b38b-edb99e367e84",
+                "resourcePath": "sounds\\snd_footstep\\snd_footstep.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b9caf8fe-8459-496d-99a1-5a760169b250",
             "Value": {
                 "id": "fdc744f0-5da2-4836-a1e2-91a367e36ff5",
@@ -1356,6 +1372,14 @@
                 "id": "4f9750a3-6a02-4df1-a966-98fbaa5427b6",
                 "resourcePath": "sprites\\spr_small_dhidraulic\\spr_small_dhidraulic.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fdc041f3-e17a-4ee3-964d-d84747accd6c",
+            "Value": {
+                "id": "cc701e0f-f419-4299-b5a3-4104fff0d017",
+                "resourcePath": "views\\fdc041f3-e17a-4ee3-964d-d84747accd6c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

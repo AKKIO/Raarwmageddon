@@ -189,3 +189,8 @@ switch(bkcp_j){
 		}
 	break;
 }
+
+if move >= 2 && walk = 0 && place_free(x+8, y) && place_free(x-8, y) || move <= -2 && walk = 0 && place_free(x+8, y) && place_free(x-8, y){
+	alarm[5] = 15;
+	walk = 1;
+}
