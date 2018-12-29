@@ -10,9 +10,13 @@ if xplo = 1{
 	var i = irandom_range(1, 2)
 	if instance_exists(int_surfacesColor) && global.allow_p = 1{
 		if int_surfacesColor.style = 0{
-			part_particles_create(global.partsys[0], x, y, global.part[0], i)
+			if xplo = 1{
+				part_particles_create(global.partsys[0], x, y, global.part[0], i)
+			}
 		}else{
-			part_particles_create_color(global.partsys[0], x, y, global.part[0], global.second_detail_color,i)
+			if xplo = 1{
+				part_particles_create_color(global.partsys[0], x, y, global.part[0], global.second_detail_color,i)
+			}
 		}
 	}
 	
