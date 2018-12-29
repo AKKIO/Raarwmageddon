@@ -30,7 +30,8 @@ switch(chapter){
 	case(2):
 		switch(select){
 			case(0):
-			
+				chapter = 3;
+				select = 0;
 			break;
 			
 			case(1):
@@ -41,6 +42,14 @@ switch(chapter){
 			case(2):
 				chapter = 1;
 				select = 1;
+			break;
+		}
+	break;
+	case(3):
+		switch(select){
+			case(2):
+				chapter = 2;
+				select = 0;
 			break;
 		}
 	break;

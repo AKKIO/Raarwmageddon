@@ -115,6 +115,7 @@ for (var yy = 1; yy <= 30; yy ++){
 chapter = 0;
 select = 0;
 scroll = 0;
+up = 3;
 
 //ini
 ini_open(working_directory + "/save_files/"+"save.ini");
@@ -122,6 +123,8 @@ ini_open(working_directory + "/save_files/"+"save.ini");
 	st = real(base64_decode(st_decrypt));
 	var a = ini_read_real("options", "particles", 1);
 	var c = ini_read_real("options", "scrshk", 1);
+	FX = ini_read_real("options", "FX", 1);
+	MUSIC = ini_read_real("options", "MUSIC", 1);
 	global.allow_p = a;
 	if a = 0{
 		txtp = "OFF"
@@ -138,3 +141,7 @@ ini_close();
 style_read = st;
 style_r[0] = "Retro.";
 style_r[1] = "Normal."
+
+snd_fx = FX*10;
+snd_music = MUSIC*10;
+

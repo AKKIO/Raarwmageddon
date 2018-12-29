@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "448572bb-bd70-49eb-83e1-2f8f3c50ed64",
+            "Value": {
+                "id": "da8e9679-f6d8-4c9a-8f49-17536b387b4a",
+                "resourcePath": "sprites\\spr_soundbar\\spr_soundbar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4493cdb8-d4f8-4e9d-8f34-1a62992c9747",
             "Value": {
                 "id": "a5b749c9-84de-492f-a527-bf3ed30f96cf",
@@ -539,6 +547,14 @@
             "Value": {
                 "id": "65646542-45d7-43e9-b823-f013375d9f7b",
                 "resourcePath": "sprites\\spr_dino_run\\spr_dino_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6e4307a3-3325-48f4-8b15-286e86a5f5dc",
+            "Value": {
+                "id": "6b06ee47-967a-4e46-90f2-5f347ff8e797",
+                "resourcePath": "sprites\\spr_soundbar_bkg\\spr_soundbar_bkg.yy",
                 "resourceType": "GMSprite"
             }
         },

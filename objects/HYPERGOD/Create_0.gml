@@ -14,6 +14,12 @@ if !ini_key_exists("options", "scrshk"){
 if !ini_key_exists("options", "particles"){
 	ini_write_real("options", "particles", 1);
 }
+if !ini_key_exists("options", "FX"){
+	ini_write_real("options", "FX", 1);
+}
+if !ini_key_exists("options", "MUSIC"){
+	ini_write_real("options", "MUSIC", 1);
+}
 if !ini_section_exists("rewards"){
 	var crypt = base64_encode(string(pi));
 	ini_write_string("rewards", "s_d", crypt);
@@ -37,3 +43,11 @@ ini_close();
 
 audio_group_load(grp_FX);
 audio_group_load(grp_MUSIC);
+
+ini_open(working_directory + "/save_files/"+"save.ini");
+	FX = ini_read_real("options", "FX", 1);
+	MUSIC = ini_read_real("options", "MUSIC", 1);
+ini_close();
+
+audio_group_set_gain(grp_FX, FX, 50);
+audio_group_set_gain(grp_MUSIC, MUSIC, 50);

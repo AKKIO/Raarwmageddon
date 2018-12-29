@@ -5,7 +5,7 @@ key_down = keyboard_check(ord("S")) || keyboard_check(vk_down);
 
 if chapter = 4{
 	if key_up && scroll = 0{
-		alarm[0] = room_speed/3;
+		alarm[0] = room_speed/up;
 		if select = 0{
 			select = 2;
 		}else{
@@ -16,7 +16,7 @@ if chapter = 4{
 
 
 	if key_down && scroll = 0{
-		alarm[0] = room_speed/3;
+		alarm[0] = room_speed/up;
 		if select = 3{
 			select = 0;
 		}else{
@@ -26,7 +26,7 @@ if chapter = 4{
 	}
 }else{
 	if key_up && scroll = 0{
-		alarm[0] = room_speed/3;
+		alarm[0] = room_speed/up;
 		if select = 0{
 			select = 2;
 		}else{
@@ -37,7 +37,7 @@ if chapter = 4{
 
 
 	if key_down && scroll = 0{
-		alarm[0] = room_speed/3;
+		alarm[0] = room_speed/up;
 		if select = 2{
 			select = 0;
 		}else{
