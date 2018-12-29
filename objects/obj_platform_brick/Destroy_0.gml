@@ -13,7 +13,13 @@ if instance_exists(int_surfacesColor) && global.allow_p = 1{
 	}
 }
 if xplo = 1{
-	instance_create_layer(x, y, "ly_platforms", obj_impact);
+	if int_surfacesColor.style = 1{
+		actc = global.second_detail_color;
+	}else{
+		actc = -1;
+	}
+	imp = instance_create_layer(x, y, "ly_platforms", obj_impact);
+	imp.image_blend = actc;
 }
 if instance_exists(int_camera){
 	int_camera.scr = 1;
