@@ -107,3 +107,4 @@ switch(chapter){
 		room_goto_next();
 	break;
 }
+audio_play_sound(snd_select, 1, 0);
