@@ -2,6 +2,7 @@
 // Puede escribir su código en este editor
 instance_destroy(dino_block);
 if xplo = 1{
+	audio_play_sound(snd_dest, 1, 0);
 	if int_surfacesColor.style = 1{
 		actc = global.second_detail_color;
 	}else{

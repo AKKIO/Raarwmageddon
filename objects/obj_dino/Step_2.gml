@@ -21,6 +21,7 @@ if instance_exists(obj_player){
 		state = 1;
 		hug = 0;
 		obj_player.hugging = 1;
+		audio_play_sound(snd_savedino, 1, 0);
 	}
 	
 	if state > 0{

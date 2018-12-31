@@ -13,6 +13,7 @@ if instance_exists(int_surfacesColor) && global.allow_p = 1{
 	}
 }
 if xplo = 1{
+	audio_play_sound(snd_dest, 1, 0);
 	if int_surfacesColor.style = 1{
 		actc = global.second_detail_color;
 	}else{

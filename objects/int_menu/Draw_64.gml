@@ -90,37 +90,37 @@ switch(chapter){
 			case(0):
 				draw_sprite_ext(spr_soundbar_bkg, snd_fx, ideal_width/2,(ideal_height/2)+32, 1, 1, 0, col, 1);//FX
 				draw_sprite_ext(spr_soundbar, snd_fx, ideal_width/2,(ideal_height/2)+32, 1, 1, 0, col, 1);//
-				scr_draw_text_outline((ideal_width/2)+32, (ideal_height/2)+32, "FX", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2)+32, (ideal_height/2)+32, "FX", sz1, sz2, 0, col2, col, 1);
 				
 				draw_sprite_ext(spr_soundbar_bkg, snd_music, ideal_width/2,(ideal_height/2)+56, 1, 1, 0, col2, 1);//MUSIC
 				draw_sprite_ext(spr_soundbar, snd_music, ideal_width/2,(ideal_height/2)+56, 1, 1, 0, col, 1);//
-				scr_draw_text_outline((ideal_width/2)+43, (ideal_height/2)+56, "MUSIC", sz1, sz2, 0, col2, c_black, 1);
+				scr_draw_text_outline((ideal_width/2)+43, (ideal_height/2)+56, "MUSIC", sz1, sz2, 0, col, c_black, 1);
 				
-				scr_draw_text_outline((ideal_width/2), (ideal_height/2)+82, "Back", sz1, sz2, 0, col2, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/2)+82, "Back", sz1, sz2, 0, col, c_black, 1);
 			break;
 			
 			case(1):
 				draw_sprite_ext(spr_soundbar_bkg, snd_fx, ideal_width/2,(ideal_height/2)+32, 1, 1, 0, col2, 1);//FX
 				draw_sprite_ext(spr_soundbar, snd_fx, ideal_width/2,(ideal_height/2)+32, 1, 1, 0, col, 1);//
-				scr_draw_text_outline((ideal_width/2)+32, (ideal_height/2)+32, "FX", sz1, sz2, 0, col2, c_black, 1);
+				scr_draw_text_outline((ideal_width/2)+32, (ideal_height/2)+32, "FX", sz1, sz2, 0, col, c_black, 1);
 				
 				draw_sprite_ext(spr_soundbar_bkg, snd_music, ideal_width/2,(ideal_height/2)+56, 1, 1, 0, col, 1);//MUSIC
 				draw_sprite_ext(spr_soundbar, snd_music, ideal_width/2,(ideal_height/2)+56, 1, 1, 0, col, 1);//
-				scr_draw_text_outline((ideal_width/2)+43, (ideal_height/2)+56, "MUSIC", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2)+43, (ideal_height/2)+56, "MUSIC", sz1, sz2, 0, col2, col, 1);
 				
-				scr_draw_text_outline((ideal_width/2), (ideal_height/2)+82, "Back", sz1, sz2, 0, col2, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/2)+82, "Back", sz1, sz2, 0, col, c_black, 1);
 			break;
 			
 			case(2):
 				draw_sprite_ext(spr_soundbar_bkg, snd_fx, ideal_width/2,(ideal_height/2)+32, 1, 1, 0, col2, 1);//FX
 				draw_sprite_ext(spr_soundbar, snd_fx, ideal_width/2,(ideal_height/2)+32, 1, 1, 0, col, 1);//
-				scr_draw_text_outline((ideal_width/2)+32, (ideal_height/2)+32, "FX", sz1, sz2, 0, col2, c_black, 1);
+				scr_draw_text_outline((ideal_width/2)+32, (ideal_height/2)+32, "FX", sz1, sz2, 0, col, c_black, 1);
 				
 				draw_sprite_ext(spr_soundbar_bkg, snd_music, ideal_width/2,(ideal_height/2)+56, 1, 1, 0, col2, 1);//MUSIC
 				draw_sprite_ext(spr_soundbar, snd_music, ideal_width/2,(ideal_height/2)+56, 1, 1, 0, col, 1);//
-				scr_draw_text_outline((ideal_width/2)+43, (ideal_height/2)+56, "MUSIC", sz1, sz2, 0, col2, c_black, 1);
+				scr_draw_text_outline((ideal_width/2)+43, (ideal_height/2)+56, "MUSIC", sz1, sz2, 0, col, c_black, 1);
 				
-				scr_draw_text_outline((ideal_width/2), (ideal_height/2)+82, "Back", sz1, sz2, 0, col, c_black, 1);
+				scr_draw_text_outline((ideal_width/2), (ideal_height/2)+82, "Back", sz1, sz2, 0, col2, col, 1);
 			break;
 		}
 	break;
