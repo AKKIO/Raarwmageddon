@@ -58,6 +58,7 @@ if instance_exists(obj_detail){
 if instance_exists(obj_safezonetop){
 	instance_destroy(obj_safezonetop);
 }
-
-part_particles_clear(global.part[0]);
+if global.allow_p = 1{
+	part_particles_clear(global.part[0]);
+}
 int_menu.alarm[1] = 2;

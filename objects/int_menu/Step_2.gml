@@ -56,3 +56,7 @@ if keyboard_check_released(ord("W")) || keyboard_check_released(vk_up) || keyboa
 ini_open(working_directory + "/save_files/"+"save.ini");
 	tutorial = ini_read_real("options", "tutorial", "0");
 ini_close();
+if blip != select{
+	audio_play_sound(snd_blip, 1, 0);
+	blip = select;
+}

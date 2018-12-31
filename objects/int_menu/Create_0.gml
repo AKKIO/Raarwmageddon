@@ -5,6 +5,7 @@ ideal_width = 0; //336;
 ideal_height = 360;
 show = 120;
 
+
 aspect_ratio = display_get_width()/display_get_height();
 
 ideal_width = round(ideal_height*(aspect_ratio));
@@ -41,6 +42,7 @@ alarm[1] = 1;
 ///menu s
 chapter = 0;
 select = 0;
+blip = select;
 scroll = 0;
 up = 3;
 

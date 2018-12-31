@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "5a3dfa26-6765-4cc8-855b-1c4b91973fed",
+            "Value": {
+                "id": "ca5869ac-b410-4f7f-900a-b0689aa90127",
+                "resourcePath": "sounds\\snd_blip\\snd_blip.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5e48c3f2-8090-460c-8eac-106318414686",
             "Value": {
                 "id": "c2279684-d12e-49ce-9a5c-851b8a23daea",
