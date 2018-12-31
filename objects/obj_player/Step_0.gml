@@ -191,12 +191,9 @@ switch(bkcp_j){
 }
 
 if move >= 2 && walk = 0 && place_free(x+8, y) && place_free(x-8, y) || move <= -2 && walk = 0 && place_free(x+8, y) && place_free(x-8, y){
-	alarm[5] = 15;
+	alarm[5] = 12;
 	walk = 1;
 	if !place_free(x, y+1) && distance_to_object(obj_asmash) > 0{
 		audio_play_sound(snd_footstep, 1, 0);
 	}
-}
-if place_free(x, y+1) && distance_to_object(obj_asmash) > 0{
-	alarm[5] = 0;
 }
