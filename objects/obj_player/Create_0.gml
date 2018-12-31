@@ -66,3 +66,8 @@ sprroll[1] = spr_dinocorn_roll;
 sprroll[2] = spr_dinobone_roll;
 sprroll[3] = spr_superdino_roll;
 alarm[4] = 2;
+
+trail_on = global.allow_p;
+if trail_on = 1{
+	trail = instance_create_layer(x, y, "ly_objects", obj_trail);
+}

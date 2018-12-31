@@ -42,3 +42,8 @@ texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 colorR = shader_get_uniform(sh_outline, "ColorR");
 colorG = shader_get_uniform(sh_outline, "ColorG");
 colorB = shader_get_uniform(sh_outline, "ColorB");
+
+trail_on = global.allow_p;
+if trail_on = 1{
+	trail = instance_create_layer(x, y, "ly_objects", obj_trail);
+}

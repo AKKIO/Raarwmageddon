@@ -56,3 +56,24 @@ ly_min = min(ly[0], ly[1], ly[2]);
 if !place_meeting(x, y, obj_barrier){
 	instance_destroy(obj_barrier);
 }
+
+if trail_on = 1{
+trail.x = x;
+trail.y = y;
+if state = 1{
+	trail.rot = roll;
+	trail.spdx = sprroll[dino];
+	trail.y = y+8;
+}else{
+	trail.rot = image_angle
+	trail.spdx = sprite_index;
+	trail.y = y;
+}
+trail.imdx = image_index;
+trail.col = image_blend;
+trail.dur = 3;
+trail.szorview = 1;
+trail.image_xscale = image_xscale;
+trail.image_yscale = image_yscale;
+trail.start = 15;
+}

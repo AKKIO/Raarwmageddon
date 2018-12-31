@@ -123,3 +123,16 @@ if instance_exists(obj_player){
 		state = 0;
 	}
 }
+if trail_on = 1{
+trail.x = x;
+trail.y = y;
+trail.rot = image_angle
+trail.spdx = sprite_index;
+trail.imdx = image_index;
+trail.col = image_blend;
+trail.dur = 3;
+trail.szorview = 1;
+trail.image_xscale = image_xscale;
+trail.image_yscale = image_yscale;
+trail.start = 15;
+}

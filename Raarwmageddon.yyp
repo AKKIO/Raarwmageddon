@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "117ddd40-e32d-401a-ba48-8a0accb16fab",
+            "Value": {
+                "id": "97cb6992-706a-4e60-b96d-8a05751f451a",
+                "resourcePath": "objects\\obj_trail\\obj_trail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "172fd577-0c93-4184-9db7-492f0397437f",
             "Value": {
                 "id": "de6241b5-9923-4b72-a268-7a01eb1ec39b",
@@ -1148,6 +1156,14 @@
                 "id": "ad90ca95-c4c3-45c6-a55b-162d2d69a42a",
                 "resourcePath": "sprites\\spr_dinocorn_jump\\spr_dinocorn_jump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ca150da0-c7da-4fd7-aa11-5514d0632976",
+            "Value": {
+                "id": "ffa3627a-435f-4219-a544-646fc673d482",
+                "resourcePath": "objects\\obj_trailef\\obj_trailef.yy",
+                "resourceType": "GMObject"
             }
         },
         {

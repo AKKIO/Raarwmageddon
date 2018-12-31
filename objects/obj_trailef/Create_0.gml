@@ -1,0 +1,10 @@
+start = 20
+hp = start;
+sz = 10;
+alpha = 0;
+imdx = image_index
+spdx = sprite_index
+rot = image_angle;
+col = image_blend;
+szorview = 0;
+dir = 0;

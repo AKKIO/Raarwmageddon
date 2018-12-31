@@ -30,6 +30,7 @@ if state = 0{
 if !place_free(x, y+1) && land = 1{
 	instance_create_layer(x, y, "ly_platforms", obj_dust);
 	land = 0
+	audio_play_sound(snd_footstep, 1, 0);
 }
 //jumps and smash
 if(!place_free(x, y + 1)){

@@ -17,3 +17,7 @@ if instance_exists(int_GUI) && instance_exists(GOD){
 		ini_close();
 	}
 }
+if trail_on = 1{
+	instance_destroy(trail);
+	trail_on = 0;
+}
