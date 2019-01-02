@@ -6,3 +6,4 @@ if trail_on = 1{
 	instance_destroy(trail);
 	trail_on = 0;
 }
+scr_death();

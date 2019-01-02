@@ -10,7 +10,7 @@ if global.demo = 1 && global.level >=9{
 if instance_exists(int_rng_world){
 	instance_destroy(int_rng_world);
 }
-
+audio_play_sound(snd_nextlvl, 1, 0);
 global.level +=1;
 if instance_exists(int_surfacesColor){
 	if int_surfacesColor.style = 0{
@@ -38,6 +38,7 @@ if hugging = 1{
 			ini_write_string("DINOS", "dino01", din_crypt[1]);
 			ini_close();
 		}
+		audio_play_sound(snd_dinorescued, 1, 0);
 		global.dinos +=1;
 		instance_destroy(obj_dino);
 		hugging = 0;

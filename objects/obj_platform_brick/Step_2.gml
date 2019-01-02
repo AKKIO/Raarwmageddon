@@ -11,6 +11,9 @@ if instance_exists(obj_shit) || instance_exists(obj_bigger_shit){
 	if distance_to_object(obj_shit) < 1 || distance_to_object(obj_bigger_shit) < 4{
 		if allow_d = 0{
 			alarm[3] = 30;
+			if hp = 2 && allow_d = 0{
+				audio_play_sound(snd_hit, 1, 0);
+			}
 			hp -=1;
 			allow_d = 1;
 		}

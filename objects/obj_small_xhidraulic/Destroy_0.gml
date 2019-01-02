@@ -11,4 +11,7 @@ if instance_exists(int_particle_sys){
 }
 if type = 1{
 	instance_create_layer(x, y-16, "ly_platforms", obj_soul);
+	scr_death();
+}else{
+	audio_play_sound(snd_dest, 1, 0);
 }

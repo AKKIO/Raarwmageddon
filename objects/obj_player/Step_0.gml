@@ -38,6 +38,7 @@ if(!place_free(x, y + 1)){
 		instance_create_layer(x, y, "ly_platforms", obj_jumpeffect)
 		vspd = -jspd;
 		land = 1;
+		audio_play_sound(snd_jump, 1, 0);
 	}
 }else if key_jump && place_free(x, y+1) && smash_counter <= 0 && y > 0{
 	ly_p = ly_min;
@@ -192,9 +193,9 @@ switch(bkcp_j){
 }
 
 if move >= 2 && walk = 0 && place_free(x+8, y) && place_free(x-8, y) || move <= -2 && walk = 0 && place_free(x+8, y) && place_free(x-8, y){
-	alarm[5] = 12;
-	walk = 1;
 	if !place_free(x, y+1) && distance_to_object(obj_asmash) > 0{
+		alarm[5] = 15;
+		walk = 1;
 		audio_play_sound(snd_footstep, 1, 0);
 	}
 }

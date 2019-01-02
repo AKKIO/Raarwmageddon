@@ -8,3 +8,7 @@ if state = 0{
 		case(2): instance_create_layer(x, y-16, "ly_objects", obj_dmsg1) break;//message 1 dinocorn
 	}
 }
+
+if distance_to_object(int_camera) < 240 && state = 0{
+	audio_play_sound(snd_cry, 1, 0);
+}
