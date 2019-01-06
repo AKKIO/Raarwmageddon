@@ -40,3 +40,8 @@ instance_create_layer(x, y, "ly_instances", int_cloud_rng);
 instance_create_layer(room_width/2, room_height-64, "ly_instances", obj_follower);
 instance_create_layer((room_width/2)+8, room_height-80 , "ly_instances", obj_player);
 instance_create_layer(room_width/2, (room_height)/2, "ly_instances", int_camera);
+
+if !audio_is_playing(mc_menu){
+	audio_stop_all();
+	audio_play_sound(mc_menu, 1, 1);
+}
