@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "187c602b-5f6d-498d-b785-69aab6562c01",
+            "Value": {
+                "id": "e291722e-4414-4983-81b8-64ae3a20e179",
+                "resourcePath": "sounds\\mc_track_3_style1\\mc_track_3_style1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1a4c3795-d270-417e-b303-377883fcb08c",
             "Value": {
                 "id": "3c0a88fe-3fa6-4eb3-9875-519869679293",
@@ -559,6 +567,14 @@
             }
         },
         {
+            "Key": "63459517-83e0-4e64-842c-27d85e6a29e6",
+            "Value": {
+                "id": "7c4635fc-bda9-4d5b-a9c3-7ce6b0acfe2e",
+                "resourcePath": "sounds\\mc_menu_style_1\\mc_menu_style_1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "66be9862-9488-404d-b20c-26b35dc7eb47",
             "Value": {
                 "id": "22f7cb73-aab0-48e6-9aae-6e02087ad2a8",
@@ -735,6 +751,14 @@
             }
         },
         {
+            "Key": "806f53a5-623d-4b50-86c7-82a0857c697d",
+            "Value": {
+                "id": "f818434e-c286-42b8-ae03-45a08bf07970",
+                "resourcePath": "sounds\\mc_track_1_style1\\mc_track_1_style1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "83e4fe75-8877-4171-a51c-db002246cca1",
             "Value": {
                 "id": "55cfd499-2a78-46fd-8d69-47b1371f9535",
@@ -780,6 +804,14 @@
                 "id": "5630b575-cf2b-4ce8-aca1-ecc73da0aa66",
                 "resourcePath": "sprites\\spr_char_hidraulic\\spr_char_hidraulic.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87c7f61e-fe57-4afd-b6c1-b3b895cd6764",
+            "Value": {
+                "id": "33052eb0-8e7b-4043-908c-7c8d0f519a02",
+                "resourcePath": "sounds\\mc_fade\\mc_fade.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -980,6 +1012,14 @@
                 "id": "09750582-4eba-44d4-b26f-c0867814d4e0",
                 "resourcePath": "views\\a42462f5-3e41-4ee3-b4a4-6282073a5acc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a53b2938-7eae-419d-bcac-b5379abda173",
+            "Value": {
+                "id": "38adb92c-1e70-4022-b247-3ad192a4a379",
+                "resourcePath": "sounds\\mc_track_2_style1\\mc_track_2_style1.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -51,4 +51,3 @@ ini_close();
 
 audio_group_set_gain(grp_FX, FX, 50);
 audio_group_set_gain(grp_MUSIC, MUSIC, 50);
-alarm[0] = 5;

@@ -10,6 +10,7 @@ if global.demo = 1 && global.level >=9{
 if instance_exists(int_rng_world){
 	instance_destroy(int_rng_world);
 }
+
 audio_play_sound(snd_nextlvl, 1, 0);
 global.level +=1;
 if instance_exists(int_surfacesColor){

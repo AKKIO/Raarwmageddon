@@ -9,6 +9,6 @@ if hp = 2{
 	draw_sprite_ext(spr_platform_brickd, tile, x, y, image_xscale, 1, 0, image_blend, 1);
 	}
 }
-if keyboard_check(ord("C")){
+/*if keyboard_check(ord("C")){
 	draw_text_transformed(x, y+8, hp, .5, .5, 0);
 }

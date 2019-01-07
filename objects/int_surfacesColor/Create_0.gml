@@ -41,3 +41,7 @@ global.dif = 0;
 alarm[0] = 1;
 
 reset_style = 0;
+
+track[0] = mc_track1
+track[1] = mc_track2
+track[2] = mc_track3;

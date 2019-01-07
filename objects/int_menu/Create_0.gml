@@ -36,7 +36,7 @@ make_rain = instance_create_layer(x, y, "ly_instances", int_shitmaker);
 make_rain.alarm[0] = 60;
 make_rain.delay = 30;
 
-
+alarm[2] = 2;
 alarm[1] = 1;
 
 ///menu s
