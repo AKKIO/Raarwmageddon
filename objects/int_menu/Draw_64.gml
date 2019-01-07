@@ -23,6 +23,7 @@ sz1 = 1
 sz2 = 0.5
 
 draw_sprite_ext(spr_LOGO, 0, ideal_width/2, (ideal_height/3), 1, 1, 0, logcol, 1)
+draw_text_transformed_color(ideal_width/2, ideal_height-16, "BlackBOX(C)2019", .5, .5, 0, col, col, col, col, 1);
 switch(chapter){
 	case(0):
 		if show <=60{
