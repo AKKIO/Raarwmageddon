@@ -24,6 +24,9 @@ switch(chapter){
 			case(2):
 				room_goto(rm_tutorial);
 			break;
+			case(3):
+				chapter = 5;
+			break;
 		}
 	break;
 	
@@ -104,7 +107,8 @@ switch(chapter){
 	break;
 	
 	case(5):
-		room_goto_next();
+		chapter = 1;
+		select = 3;
 	break;
 }
 audio_play_sound(snd_select, 1, 0);

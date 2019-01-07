@@ -48,18 +48,28 @@ switch(chapter){
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "New run", sz1, sz2, 0, col2, col, 1);
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Settings", sz1, sz2, 0, col, c_black, 1);
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Tutorial", sz1, sz2, 0, col, c_black, 1);
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Credits", sz1, sz2, 0, col, c_black, 1);
 		break;
 		
 		case(1):
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "New run", sz1, sz2, 0, col, c_black, 1);
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Settings", sz1, sz2, 0, col2, col, 1);
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Tutorial", sz1, sz2, 0, col, c_black, 1);
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Credits", sz1, sz2, 0, col, c_black, 1);
 		break;
 		
 		case(2):
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "New run", sz1, sz2, 0, col, c_black, 1);
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Settings", sz1, sz2, 0, col, c_black, 1);
 			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Tutorial", sz1, sz2, 0, col2, col, 1);
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Credits", sz1, sz2, 0, col, c_black, 1);
+		break;
+		
+		case(3):
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "New run", sz1, sz2, 0, col, c_black, 1);
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+10, "Settings", sz1, sz2, 0, col, c_black, 1);
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+20, "Tutorial", sz1, sz2, 0, col, c_black, 1);
+			scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Credits", sz1, sz2, 0, col2, col, 1);
 		break;
 	}
 	break;
@@ -156,5 +166,13 @@ switch(chapter){
 				scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Back", sz1, sz2, 0, col2, col, 1);
 			break;
 		}
+	break;
+	
+	case(5):
+		scr_draw_text_outline((ideal_width/2), (ideal_height/1.5), "Coding: Ynwrd(Flores Jaime)", sz1, sz2, 0, col, c_black, 1);
+		scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+15, "Art: RedSheep(Erasmo Chang)", sz1, sz2, 0, col, c_black, 1);
+		scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+30, "Music & sound: Ynwrd & RedSheep", sz1, sz2, 0, col, c_black, 1);
+		scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+45, "Thank u for supporting us <3", sz1, sz2, 0, col, c_black, 1);
+		scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+60, "Back", sz1, sz2, 0, col2, col, 1);
 	break;
 }

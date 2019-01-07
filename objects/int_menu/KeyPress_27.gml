@@ -21,4 +21,7 @@ switch(chapter){
 	case(4):
 		chapter = 2;
 	break;
+	case(5):
+		chapter = 1;
+	break;
 }
