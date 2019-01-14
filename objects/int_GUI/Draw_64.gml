@@ -194,3 +194,9 @@ if less > 0{
 	
 	less--
 }
+/*
+left = ideal_width-ideal_width+48
+draw_sprite_ext(spr_button, 0, left, ideal_height/1.5, 1.5, 1.5, 0, c_white, 1);
+draw_sprite_ext(spr_button, 0, left+96, ideal_height/1.5, 1.5, 1.5, 180, c_white, 1);
+draw_sprite_ext(spr_button, 1, ideal_width-128, ideal_height/1.5, 1.5, 1.5, 0, c_white, 1);
+draw_sprite_ext(spr_button, 2, ideal_width-48, ideal_height/1.5, 1.5, 1.5, 0, c_white, 1);

@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "83567ddf-84d9-4198-a9f2-53af2d8b8ef0",
+            "Value": {
+                "id": "2855e8a0-f67a-4416-aff5-b0a9d624f9a2",
+                "resourcePath": "sprites\\spr_splashscreen1\\spr_splashscreen1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "83e4fe75-8877-4171-a51c-db002246cca1",
             "Value": {
                 "id": "55cfd499-2a78-46fd-8d69-47b1371f9535",
@@ -1191,6 +1199,14 @@
             }
         },
         {
+            "Key": "bccac65e-4043-4ea3-94dd-4cfd24dd0841",
+            "Value": {
+                "id": "607cca91-e2bf-4fbf-9957-ac667fa2483e",
+                "resourcePath": "sprites\\spr_splashscreen\\spr_splashscreen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf944a47-d1b6-4629-8193-a78194bfb2b1",
             "Value": {
                 "id": "6a8bd840-f87c-4e54-90df-bd220144d4af",
@@ -1275,6 +1291,14 @@
             "Value": {
                 "id": "ad90ca95-c4c3-45c6-a55b-162d2d69a42a",
                 "resourcePath": "sprites\\spr_dinocorn_jump\\spr_dinocorn_jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c892d37b-2884-43bd-85c9-7f5903583f81",
+            "Value": {
+                "id": "e40193bf-71fc-4a7c-b4b2-0a5b9a3def11",
+                "resourcePath": "sprites\\spr_button\\spr_button.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1407,6 +1431,14 @@
             }
         },
         {
+            "Key": "d972634a-f886-4946-b531-6f8d2a0ba637",
+            "Value": {
+                "id": "514f38c9-88f5-4384-9d44-b996945cca0b",
+                "resourcePath": "rooms\\rm_splashscreen\\rm_splashscreen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d9d135c5-5041-4c15-ad73-c3e04ab1f5c8",
             "Value": {
                 "id": "4b181bf1-5107-45e8-8dc1-82d9c0b0332d",
@@ -1460,6 +1492,14 @@
                 "id": "dfefcdd5-7de4-4cf5-80f1-bf4db12ddf20",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e4519361-e394-4800-96ae-5cf7b3536843",
+            "Value": {
+                "id": "713aa40c-4910-41fb-bb71-32cee5d4334a",
+                "resourcePath": "objects\\int_splash\\int_splash.yy",
+                "resourceType": "GMObject"
             }
         },
         {
