@@ -176,3 +176,8 @@ switch(chapter){
 		scr_draw_text_outline((ideal_width/2), (ideal_height/1.5)+60, "Back", sz1, sz2, 0, col2, col, 1);
 	break;
 }
+
+if scr_st > 0{
+	scr_draw_text_outline((ideal_width/8), (ideal_height/1.2), "Highscore", sz1, sz2, 0, col, c_black, 1);
+	scr_draw_text_outline((ideal_width/8), (ideal_height/1.2)+16, scr_st, sz1, sz2, 0, col, c_black, 1);
+}

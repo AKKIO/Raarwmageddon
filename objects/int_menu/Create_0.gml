@@ -74,3 +74,9 @@ style_r[1] = "Normal."
 snd_fx = FX*10;
 snd_music = MUSIC*10;
 
+ini_open(working_directory + "/save_files/"+"save.ini");
+	scr_decrypt = ini_read_string("Score", "highscore", "MAo=");
+	scr_stat = real(base64_decode(scr_decrypt));
+	scr_st = (scr_stat/7)/256;
+ini_close();
+		
