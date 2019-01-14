@@ -7,9 +7,6 @@ if instance_exists(int_surfacesColor){
 			audio_play_sound(mc_menu, 1, 1);
 		}
 	}else{
-		if !audio_is_playing(mc_menu_style_1){
-			audio_stop_all();
-			audio_play_sound(mc_menu_style_1, 1, 1);
-		}
+		alarm[3] = (room_speed*2)+2;
 	}
 }
